@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
+            "outputFile": "C:\\Users\\juanc\\Desktop\\groupware\\TIPI\\titan\\from git\\TitanLiveApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "/Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/51eeb0b397b3cf7a8b6aeddee1523590/res/values-v23/values-v23.xml",
+                    "source": "C:\\Users\\juanc\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\3b57308a70e6df85040af814c2bbbaf8\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
@@ -15,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "/Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.0.aar/30bdd2795ba297239226a248cbf815ba/res/values-v23/values-v23.xml",
+                    "source": "C:\\Users\\juanc\\.gradle\\caches\\transforms-1\\files-1.1\\cardview-v7-27.1.0.aar\\de878b8c717b084f4dd331d12713ef00\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

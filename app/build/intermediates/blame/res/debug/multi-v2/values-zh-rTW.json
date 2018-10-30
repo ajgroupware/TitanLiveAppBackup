@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rTW/values-zh-rTW.xml",
+            "outputFile": "C:\\Users\\juanc\\Desktop\\groupware\\TIPI\\titan\\from git\\TitanLiveApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rTW\\values-zh-rTW.xml",
             "map": [
                 {
-                    "source": "/Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/ef7b4e6cc7a990d9f7b6ed9b1f3f1121/res/values-zh-rTW/values-zh-rTW.xml",
+                    "source": "C:\\Users\\juanc\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\3b57308a70e6df85040af814c2bbbaf8\\res\\values-zh-rTW\\values-zh-rTW.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,200,293,393,475,572,680,756,832,910,1006,1102,1197,1294,1389,1489,1639,1733",
+                        "endColumns": "94,92,99,81,96,107,75,75,77,95,95,94,96,94,99,149,93,77",
+                        "endOffsets": "195,288,388,470,567,675,751,827,905,1001,1097,1192,1289,1384,1484,1634,1728,1806"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\juanc\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.0.aar\\4481697ea6e3df8d40e649e4ef072f59\\res\\values-zh-rTW\\values-zh-rTW.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -18,16 +28,6 @@
                         "startOffsets": "1811",
                         "endColumns": "100",
                         "endOffsets": "1907"
-                    }
-                },
-                {
-                    "source": "/Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/51eeb0b397b3cf7a8b6aeddee1523590/res/values-zh-rTW/values-zh-rTW.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,200,293,393,475,572,680,756,832,910,1006,1102,1197,1294,1389,1489,1639,1733",
-                        "endColumns": "94,92,99,81,96,107,75,75,77,95,95,94,96,94,99,149,93,77",
-                        "endOffsets": "195,288,388,470,567,675,751,827,905,1001,1097,1192,1289,1384,1484,1634,1728,1806"
                     }
                 }
             ]

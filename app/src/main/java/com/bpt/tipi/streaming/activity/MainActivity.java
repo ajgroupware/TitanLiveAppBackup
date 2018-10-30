@@ -51,6 +51,7 @@ import org.json.JSONObject;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, HttpInterface {
@@ -284,6 +285,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ServiceHelper.startRecorderService(MainActivity.this);
         ServiceHelper.startMqttService(MainActivity.this);
         ServiceHelper.startLocationService(MainActivity.this);
+        loadLabels();
     }
 
     public void showDialogPassword() {
@@ -457,6 +459,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             e.printStackTrace();
         }
         List<Label> labels = database.getLabels();
+        if(labels.size()== 0){
+            String[] defaultLabels = getResources().getStringArray(R.array.labels_tagging);
+
+            for (String label : defaultLabels) {
+                Label lb = new Label(0, label);
+                labels.add(lb);
+            }
+        }
         database.close();
         return labels;
     }

@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/libraries/opencv/src/org/opencv/engine/OpenCVEngineInterface.aidl
+ * Original file: C:\\Users\\juanc\\Desktop\\groupware\\TIPI\\titan\\from git\\TitanLiveApp\\libraries\\opencv\\src\\org\\opencv\\engine\\OpenCVEngineInterface.aidl
  */
 package org.opencv.engine;
 /**

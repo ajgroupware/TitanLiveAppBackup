@@ -17,45 +17,33 @@ import android.widget.Toast;
 
 import com.bpt.tipi.streaming.ItemVideoFragment;
 import com.bpt.tipi.streaming.R;
-import com.bpt.tipi.streaming.UnCaughtException;
 import com.bpt.tipi.streaming.Utils;
 import com.bpt.tipi.streaming.helper.VideoNameHelper;
 import com.bpt.tipi.streaming.model.ItemVideo;
 import com.bpt.tipi.streaming.model.Label;
-import com.bpt.tipi.streaming.network.HttpClient;
-import com.bpt.tipi.streaming.network.HttpHelper;
-import com.bpt.tipi.streaming.network.HttpInterface;
 import com.bpt.tipi.streaming.persistence.Database;
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.io.File;
-import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class TaggedActivity extends AppCompatActivity implements HttpInterface, View.OnClickListener {
+public class TaggedActivity extends AppCompatActivity implements View.OnClickListener {
 
     ViewPager mViewPager;
     List<ItemVideo> files;
     Button btnTagged;
     Spinner spOptions;
 
-    private ProgressDialog progressDialog;
-    Database database;
     SectionsPagerAdapter adapter;
     TextView tvTitle;
+
+    Database database;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tagged);
-        Thread.setDefaultUncaughtExceptionHandler(new UnCaughtException(this));
 
         database = new Database(TaggedActivity.this);
         try {
@@ -91,20 +79,31 @@ public class TaggedActivity extends AppCompatActivity implements HttpInterface, 
 
             }
         });
+        loadSpinner();
+    }
 
-        if (database.getLabels().size() == 0) {
-            JSONObject json = new JSONObject();
-            try {
-                json.put("type", "0");
-            } catch (JSONException e) {
-                e.printStackTrace();
+    public void loadSpinner() {
+        List<Label> labels = database.getLabels();
+        List<String> names = new ArrayList<>();
+        ArrayAdapter<String> adapter = null;
+        if (labels.size() > 0) {
+            names.add("Seleccione...");
+            for (int i = 0; i < labels.size(); i++) {
+                names.add(labels.get(i).description);
+                adapter = new ArrayAdapter<>(
+                        TaggedActivity.this, android.R.layout.simple_spinner_item,
+                        names);
             }
-            HttpClient httpClient = new HttpClient(TaggedActivity.this);
-            httpClient.httpRequest(json.toString(), HttpHelper.Method.LABELS, HttpHelper.TypeRequest.TYPE_POST, true);
-            showAlertProgress();
         } else {
-            loadSpinner();
+            String[] defaultLabels = getResources().getStringArray(R.array.labels_tagging);
+            adapter = new ArrayAdapter<>(
+                    TaggedActivity.this, android.R.layout.simple_spinner_item,
+                    defaultLabels);
         }
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        spOptions.setAdapter(adapter);
+        spOptions.setSelection(0);
     }
 
     private List<ItemVideo> getFiles(File f) {
@@ -124,66 +123,13 @@ public class TaggedActivity extends AppCompatActivity implements HttpInterface, 
     }
 
     @Override
-    public void onSuccess(String method, JSONObject response) {
-        if (progressDialog != null) {
-            progressDialog.dismiss();
-        }
-        JSONObject object = response.optJSONObject("result");
-        if (object != null){
-            if (object.optString("code", "").equals("100")) {
-                JSONArray jsonArray = response.optJSONArray("labelsList");
-                if (jsonArray != null) {
-                    Gson gson = new Gson();
-                    Type collectionType = new TypeToken<List<Label>>() {
-                    }.getType();
-                    List<Label> labels = gson.fromJson(jsonArray.toString(), collectionType);
-                    database.insertLabels(labels);
-                    loadSpinner();
-                }
-            } else {
-                Toast.makeText(TaggedActivity.this, "Ocurrió un error al intentar actualizar el listado de etiquetas", Toast.LENGTH_LONG).show();
-            }
-        }
-    }
-
-    @Override
-    public void onFailed(String method, JSONObject errorResponse) {
-        if (progressDialog != null) {
-            progressDialog.dismiss();
-        }
-        Toast.makeText(TaggedActivity.this, "Ocurrió un error al intentar actualizar el listado de etiquetas", Toast.LENGTH_LONG).show();
-        loadSpinner();
-    }
-
-    public void loadSpinner() {
-        List<Label> labels = database.getLabels();
-        if (labels.size() > 0) {
-            List<String> names = new ArrayList<>();
-            names.add("Seleccione...");
-            for (int i = 0; i < labels.size(); i++) {
-                names.add(labels.get(i).description);
-            }
-            ArrayAdapter<String> adapter = new ArrayAdapter<>(
-                    TaggedActivity.this, android.R.layout.simple_spinner_item,
-                    names);
-
-            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-            spOptions.setAdapter(adapter);
-            spOptions.setSelection(0);
-        }
-    }
-
-    @Override
     public void onClick(View view) {
         if (spOptions.getSelectedItemPosition() != 0) {
-            List<Label> labels = database.getLabels();
-            if (labels.size() > 0) {
-                Label label = labels.get(spOptions.getSelectedItemPosition() - 1);
-                VideoNameHelper.taggedVideo(adapter.getPageTitle(mViewPager.getCurrentItem()).toString(), label.id);
-                Toast.makeText(TaggedActivity.this, "Video etiquetado con éxito", Toast.LENGTH_SHORT).show();
-                adapter.removeItem(mViewPager.getCurrentItem());
-            }
+            int id = Utils.getIdLabel(spOptions.getSelectedItemPosition());
+            VideoNameHelper.taggedVideo(adapter.getPageTitle(mViewPager.getCurrentItem()).toString(), id);
+            Toast.makeText(TaggedActivity.this, "Video etiquetado con éxito", Toast.LENGTH_SHORT).show();
+            adapter.removeItem(mViewPager.getCurrentItem());
+            spOptions.setSelection(0);
         } else {
             Toast.makeText(TaggedActivity.this, "Por favor seleccione una etiqueta", Toast.LENGTH_SHORT).show();
         }
@@ -226,14 +172,5 @@ public class TaggedActivity extends AppCompatActivity implements HttpInterface, 
                 finish();
             }
         }
-    }
-
-    private void showAlertProgress() {
-        progressDialog = new ProgressDialog(TaggedActivity.this);
-        progressDialog.setTitle("Cargando...");
-        progressDialog.setMessage("Cargando información, espere");
-        progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
-        progressDialog.setCancelable(false);
-        progressDialog.show();
     }
 }

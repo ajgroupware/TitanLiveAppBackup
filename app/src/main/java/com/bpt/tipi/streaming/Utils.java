@@ -111,4 +111,46 @@ public class Utils {
             }
         }
     }
+
+    public static int getIdLabel(int position) {
+        switch (position) {
+            case 1:
+                return 88;
+            case 2:
+                return 90;
+            case 3:
+                return 47;
+            case 4:
+                return 13;
+            case 5:
+                return 91;
+            case 6:
+                return 58;
+            case 7:
+                return 18;
+            case 8:
+                return 22;
+            case 9:
+                return 23;
+            case 10:
+                return 24;
+            case 11:
+                return 69;
+            case 12:
+                return 70;
+            case 13:
+                return 29;
+            case 14:
+                return 104;
+            case 15:
+                return 105;
+            case 16:
+                return 84;
+            case 17:
+                return 43;
+            default:
+                return 1;
+        }
+    }
+
 }

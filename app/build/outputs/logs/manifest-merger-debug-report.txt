@@ -1,326 +1,326 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:2:1-111:12
-INJECTED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:2:1-111:12
-INJECTED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:2:1-111:12
-INJECTED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:2:1-111:12
-MERGED from [:libraries:opencv] /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/libraries/opencv/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:design:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/design-27.1.0.aar/1b429fcf5a44fdd3a487a3dc277efe0c/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:appcompat-v7:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/51eeb0b397b3cf7a8b6aeddee1523590/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cardview-v7:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.0.aar/30bdd2795ba297239226a248cbf815ba/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/5b3bc60fd4c6c21321e8d2541946ea3c/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:support-v4:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.0.aar/7918918dd30e28d1913d627d67ae85d1/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.0.aar/90f67f7df6f3ed6976fa042c3549102c/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.0.aar/56e179b1ce44121e5c27e20b9eafcc36/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.0.aar/8b324684110509111352e787e8cb0b20/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.0.aar/6c7e1b583ece9c8e26c238a3ab5b65da/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.0.aar/3db3ef916976f74b297b1ac4275761e0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.0.aar/6abbcfdc2fc617ec74cc431b49805f58/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/transition-27.1.0.aar/53abf9f158f319d80251ecb880ea3731/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.0.aar/c5e99ab4d3622f1bd61c73e86a081f7c/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/ef7b4e6cc7a990d9f7b6ed9b1f3f1121/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/6c2a4e8376b50cac03ed5074aef874a0/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/ebcd904d24848050ba24ed51aaae0204/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/dbd587720209c7cae060c2644135bfa6/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/19140b6650d48264c6db08e99d9443d4/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:2:1-111:12
-INJECTED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:2:1-111:12
-INJECTED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:2:1-111:12
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:2:1-111:12
+INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:2:1-111:12
+INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:2:1-111:12
+INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:2:1-111:12
+MERGED from [:libraries:opencv] C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\libraries\opencv\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:design:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\design-27.1.0.aar\29ecb96d86b31723a4ec174fba9257e2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\3b57308a70e6df85040af814c2bbbaf8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.0.aar\de878b8c717b084f4dd331d12713ef00\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\4a4c1cb8cc87f4706e5b9cfd29db3b1a\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v4:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.0.aar\284b51c5b698ca1bc920ca3480d01692\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\d374a025d99621c3f1eea189e72a8658\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.0.aar\62000155b46a02dced2c3bbe62f06995\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.0.aar\ce0d6bf40f4e9fcf01d706ac21635c5c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.0.aar\0e590ece78c4e3ffd234e2511d058efb\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.0.aar\cc50b9b745d5f76021b46a7015cbd5f9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.0.aar\eba1f9a087e9f9139c10509900a1572e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\transition-27.1.0.aar\7eb46d056889f8f81d0459bbcabdec60\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.0.aar\e73a1dfd4dc337890378464edec43051\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.0.aar\4481697ea6e3df8d40e649e4ef072f59\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\6206009575068c489f1a40af41638b3d\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\d3f995849a29edc073add36fad31f066\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\5abbe56dcb1fa07827c9d5576055e4a5\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\18caad9d90dc7c61fcd51f88c39937e3\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:2:1-111:12
+INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:2:1-111:12
+INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:2:1-111:12
 	package
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:4:5-37
-		INJECTED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:4:5-37
+		INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:2:1-111:12
-		INJECTED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:2:1-111:12
+		INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:3:5-51
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:2:1-111:12
-		INJECTED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:2:1-111:12
+		INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:6:5-79
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:6:5-79
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:6:22-76
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:6:22-76
 uses-permission#android.permission.CAMERA
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:7:5-65
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:7:5-65
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:7:22-62
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:7:22-62
 uses-permission#android.permission.CAPTURE_AUDIO_OUTPUT
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:8:5-79
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:8:5-79
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:8:22-76
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:8:22-76
 uses-permission#android.permission.INTERNET
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:9:5-67
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:9:5-67
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:9:22-64
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:9:22-64
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:10:5-75
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:10:5-75
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:10:22-72
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:10:22-72
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:11:5-71
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:11:5-71
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:11:22-68
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:11:22-68
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:12:5-78
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:12:5-78
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:12:22-75
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:12:22-75
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:13:5-81
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:13:5-81
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:13:22-78
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:13:22-78
 uses-permission#android.permission.VIBRATE
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:14:5-66
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:14:5-66
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:14:22-63
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:14:22-63
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:15:5-81
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:15:5-81
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:15:22-78
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:15:22-78
 uses-permission#android.permission.FLASHLIGHT
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:16:5-69
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:16:5-69
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:16:22-66
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:16:22-66
 uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:17:5-80
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:17:5-80
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:17:22-77
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:17:22-77
 uses-permission#android.permission.wri
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:19:5-62
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:19:5-62
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:19:22-59
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:19:22-59
 uses-permission#android.permission.WAKE_LOCK
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:20:5-68
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:20:5-68
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:20:22-65
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:20:22-65
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:21:5-79
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:21:5-79
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:21:22-76
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:21:22-76
 uses-permission#android.permission.USB_PERMISSION
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:22:5-73
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:22:5-73
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:22:22-70
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:22:22-70
 uses-feature#android.hardware.camera
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:24:5-26:35
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:24:5-26:35
 	android:required
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:26:9-32
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:26:9-32
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:25:9-47
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:25:9-47
 uses-feature#android.hardware.usb.host
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:27:5-62
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:27:5-62
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:27:19-59
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:27:19-59
 uses-feature#android.hardware.camera.autofocus
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:28:5-70
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:28:5-70
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:28:19-67
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:28:19-67
 application
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:29:5-109:19
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/5b3bc60fd4c6c21321e8d2541946ea3c/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/5b3bc60fd4c6c21321e8d2541946ea3c/AndroidManifest.xml:9:5-20
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:29:5-109:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\4a4c1cb8cc87f4706e5b9cfd29db3b1a\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\4a4c1cb8cc87f4706e5b9cfd29db3b1a\AndroidManifest.xml:9:5-20
 	android:supportsRtl
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:34:9-35
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:34:9-35
 	android:label
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:33:9-41
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:33:9-41
 	tools:ignore
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:35:9-48
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:35:9-48
 	android:icon
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:32:9-43
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:32:9-43
 	android:allowBackup
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:31:9-35
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:31:9-35
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:30:9-30
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:30:9-30
 receiver#com.bpt.tipi.streaming.receiver.USBConnectionReceiver
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:37:9-47:20
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:37:9-47:20
 	android:enabled
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:39:13-35
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:39:13-35
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:38:13-59
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:38:13-59
 intent-filter#action:name:android.hardware.usb.action.USB_STATE
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:40:13-42:29
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:40:13-42:29
 	android:priority
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:40:28-51
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:40:28-51
 action#android.hardware.usb.action.USB_STATE
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:41:17-80
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:41:17-80
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:41:25-77
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:41:25-77
 meta-data#android.hardware.usb.action.USB_DEVICE_ATTACHED
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:44:13-46:57
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:44:13-46:57
 	android:resource
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:46:17-54
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:46:17-54
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:45:17-79
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:45:17-79
 receiver#com.bpt.tipi.streaming.receiver.VideoReceiver
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:48:9-54:20
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:48:9-54:20
 	android:enabled
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:50:13-35
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:50:13-35
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:49:13-51
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:49:13-51
 intent-filter#action:name:com.android.action.RECORD_KEYDOWN
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:51:13-53:29
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:51:13-53:29
 	android:priority
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:51:28-51
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:51:28-51
 action#com.android.action.RECORD_KEYDOWN
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:52:17-76
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:52:17-76
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:52:25-73
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:52:25-73
 receiver#com.bpt.tipi.streaming.receiver.SOSReceiver
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:55:9-61:20
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:55:9-61:20
 	android:enabled
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:57:13-35
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:57:13-35
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:56:13-49
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:56:13-49
 intent-filter#action:name:com.android.action.RECORDSOUND_KEYDOWN
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:58:13-60:29
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:58:13-60:29
 	android:priority
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:58:28-51
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:58:28-51
 action#com.android.action.RECORDSOUND_KEYDOWN
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:59:17-81
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:59:17-81
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:59:25-78
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:59:25-78
 receiver#com.bpt.tipi.streaming.receiver.CameraReceiver
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:62:9-68:20
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:62:9-68:20
 	android:enabled
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:64:13-35
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:64:13-35
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:63:13-52
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:63:13-52
 intent-filter#action:name:com.android.action.CAMERA_KEYDOWN
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:65:13-67:29
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:65:13-67:29
 	android:priority
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:65:28-51
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:65:28-51
 action#com.android.action.CAMERA_KEYDOWN
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:66:17-76
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:66:17-76
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:66:25-73
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:66:25-73
 receiver#com.bpt.tipi.streaming.receiver.ConnectivityReceiver
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:69:9-75:20
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:69:9-75:20
 	android:enabled
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:71:13-35
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:71:13-35
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:70:13-58
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:70:13-58
 intent-filter#action:name:android.net.conn.CONNECTIVITY_CHANGE
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:72:13-74:29
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:72:13-74:29
 	android:priority
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:72:28-51
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:72:28-51
 action#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:73:17-79
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:73:17-79
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:73:25-76
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:73:25-76
 service#com.bpt.tipi.streaming.mqtt.MqttService
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:77:9-79:38
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:77:9-79:38
 	android:enabled
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:79:13-35
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:79:13-35
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:78:13-45
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:78:13-45
 service#com.bpt.tipi.streaming.service.LocationService
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:80:9-82:38
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:80:9-82:38
 	android:enabled
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:82:13-35
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:82:13-35
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:81:13-52
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:81:13-52
 activity#com.bpt.tipi.streaming.activity.MainActivity
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:84:9-95:20
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:84:9-95:20
 	android:screenOrientation
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:86:13-49
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:86:13-49
 	android:theme
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:87:13-44
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:87:13-44
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:85:13-50
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:85:13-50
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.DEFAULT+category:name:android.intent.category.HOME+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:88:13-94:29
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:88:13-94:29
 action#android.intent.action.MAIN
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:89:17-69
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:89:17-69
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:89:25-66
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:89:25-66
 category#android.intent.category.HOME
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:91:17-73
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:91:17-73
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:91:27-70
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:91:27-70
 category#android.intent.category.DEFAULT
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:92:17-76
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:92:17-76
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:92:27-73
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:92:27-73
 category#android.intent.category.LAUNCHER
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:93:17-77
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:93:17-77
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:93:27-74
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:93:27-74
 activity#com.bpt.tipi.streaming.activity.SettingsActivity
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:96:9-99:57
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:96:9-99:57
 	android:screenOrientation
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:98:13-49
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:98:13-49
 	android:theme
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:99:13-54
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:99:13-54
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:97:13-54
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:97:13-54
 activity#com.bpt.tipi.streaming.activity.TaggedActivity
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:100:9-103:57
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:100:9-103:57
 	android:screenOrientation
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:102:13-49
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:102:13-49
 	android:theme
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:103:13-54
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:103:13-54
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:101:13-52
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:101:13-52
 service#com.bpt.tipi.streaming.service.RecorderService
-ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:105:9-107:38
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:105:9-107:38
 	android:enabled
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:107:13-35
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:107:13-35
 	android:name
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml:106:13-52
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:106:13-52
 uses-sdk
-INJECTED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml
-INJECTED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml
-MERGED from [:libraries:opencv] /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/libraries/opencv/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
-MERGED from [:libraries:opencv] /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/libraries/opencv/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:design:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/design-27.1.0.aar/1b429fcf5a44fdd3a487a3dc277efe0c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/design-27.1.0.aar/1b429fcf5a44fdd3a487a3dc277efe0c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/51eeb0b397b3cf7a8b6aeddee1523590/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/51eeb0b397b3cf7a8b6aeddee1523590/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.0.aar/30bdd2795ba297239226a248cbf815ba/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.0.aar/30bdd2795ba297239226a248cbf815ba/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/5b3bc60fd4c6c21321e8d2541946ea3c/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/5b3bc60fd4c6c21321e8d2541946ea3c/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:support-v4:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.0.aar/7918918dd30e28d1913d627d67ae85d1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.0.aar/7918918dd30e28d1913d627d67ae85d1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.0.aar/90f67f7df6f3ed6976fa042c3549102c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.0.aar/90f67f7df6f3ed6976fa042c3549102c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.0.aar/56e179b1ce44121e5c27e20b9eafcc36/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.0.aar/56e179b1ce44121e5c27e20b9eafcc36/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.0.aar/8b324684110509111352e787e8cb0b20/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.0.aar/8b324684110509111352e787e8cb0b20/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.0.aar/6c7e1b583ece9c8e26c238a3ab5b65da/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.0.aar/6c7e1b583ece9c8e26c238a3ab5b65da/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.0.aar/3db3ef916976f74b297b1ac4275761e0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.0.aar/3db3ef916976f74b297b1ac4275761e0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.0.aar/6abbcfdc2fc617ec74cc431b49805f58/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.0.aar/6abbcfdc2fc617ec74cc431b49805f58/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/transition-27.1.0.aar/53abf9f158f319d80251ecb880ea3731/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/transition-27.1.0.aar/53abf9f158f319d80251ecb880ea3731/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.0.aar/c5e99ab4d3622f1bd61c73e86a081f7c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.0.aar/c5e99ab4d3622f1bd61c73e86a081f7c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/ef7b4e6cc7a990d9f7b6ed9b1f3f1121/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/ef7b4e6cc7a990d9f7b6ed9b1f3f1121/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/6c2a4e8376b50cac03ed5074aef874a0/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/6c2a4e8376b50cac03ed5074aef874a0/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/ebcd904d24848050ba24ed51aaae0204/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/ebcd904d24848050ba24ed51aaae0204/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/dbd587720209c7cae060c2644135bfa6/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/dbd587720209c7cae060c2644135bfa6/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/19140b6650d48264c6db08e99d9443d4/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] /Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/19140b6650d48264c6db08e99d9443d4/AndroidManifest.xml:20:5-44
-INJECTED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml
-INJECTED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml
+INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml
+MERGED from [:libraries:opencv] C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\libraries\opencv\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:libraries:opencv] C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\libraries\opencv\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\design-27.1.0.aar\29ecb96d86b31723a4ec174fba9257e2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\design-27.1.0.aar\29ecb96d86b31723a4ec174fba9257e2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\3b57308a70e6df85040af814c2bbbaf8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\3b57308a70e6df85040af814c2bbbaf8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.0.aar\de878b8c717b084f4dd331d12713ef00\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.0.aar\de878b8c717b084f4dd331d12713ef00\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\4a4c1cb8cc87f4706e5b9cfd29db3b1a\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\4a4c1cb8cc87f4706e5b9cfd29db3b1a\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.0.aar\284b51c5b698ca1bc920ca3480d01692\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.0.aar\284b51c5b698ca1bc920ca3480d01692\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\d374a025d99621c3f1eea189e72a8658\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\d374a025d99621c3f1eea189e72a8658\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.0.aar\62000155b46a02dced2c3bbe62f06995\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.0.aar\62000155b46a02dced2c3bbe62f06995\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.0.aar\ce0d6bf40f4e9fcf01d706ac21635c5c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.0.aar\ce0d6bf40f4e9fcf01d706ac21635c5c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.0.aar\0e590ece78c4e3ffd234e2511d058efb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.0.aar\0e590ece78c4e3ffd234e2511d058efb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.0.aar\cc50b9b745d5f76021b46a7015cbd5f9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.0.aar\cc50b9b745d5f76021b46a7015cbd5f9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.0.aar\eba1f9a087e9f9139c10509900a1572e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.0.aar\eba1f9a087e9f9139c10509900a1572e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\transition-27.1.0.aar\7eb46d056889f8f81d0459bbcabdec60\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\transition-27.1.0.aar\7eb46d056889f8f81d0459bbcabdec60\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.0.aar\e73a1dfd4dc337890378464edec43051\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.0.aar\e73a1dfd4dc337890378464edec43051\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.0.aar\4481697ea6e3df8d40e649e4ef072f59\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.0.aar\4481697ea6e3df8d40e649e4ef072f59\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\6206009575068c489f1a40af41638b3d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\6206009575068c489f1a40af41638b3d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\d3f995849a29edc073add36fad31f066\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\d3f995849a29edc073add36fad31f066\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\5abbe56dcb1fa07827c9d5576055e4a5\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\5abbe56dcb1fa07827c9d5576055e4a5\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\18caad9d90dc7c61fcd51f88c39937e3\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\18caad9d90dc7c61fcd51f88c39937e3\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml
-		ADDED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml

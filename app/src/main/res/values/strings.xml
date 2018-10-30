@@ -1,0 +1,445 @@
+<resources>
+    <string name="app_name">Titan Live</string>
+
+    <!-- Encabezados de la configuración -->
+    <string name="pref_header_general_title">Ajustes generales</string>
+    <string name="pref_header_general_summary">Configuración general de la aplicación</string>
+
+    <string name="pref_header_connection_title">Ajustes de conexión</string>
+    <string name="pref_header_connection_summary">Configuración de los parámetros de conexión al servidor</string>
+
+    <string name="pref_header_streaming_title">Ajustes de video streaming</string>
+    <string name="pref_header_streaming_summary">Configuración de los parámetros del streaming</string>
+
+    <string name="pref_header_local_title">Ajustes de video local</string>
+    <string name="pref_header_local_summary">Configuración de los parámetros del video local</string>
+
+    <string name="pref_header_device_title">Configuración del dispositivo</string>
+    <string name="pref_header_device_summary">Acceso a la configuración general del dispositivo</string>
+
+
+    <!-- Video settings -->
+    <string name="pref_title_video_size">Tamaño de video</string>
+    <string name="pref_title_framerate">Framerate</string>
+    <string name="pref_title_bitrate">Bitrate</string>
+    <string name="pref_title_vibrate_and_sound">Vibrar y sonar al grabar video</string>
+
+    <string name="pref_default_local_framerate">30</string>
+
+    <string name="pref_default_bitrate">1500</string>
+
+    <!-- Audio settings -->
+    <string name="pref_title_sample_rate">Sample rate</string>
+    <string name="pref_default_sample_rate">44100</string>
+
+    <string name="pref_title_audio_bitrate">Bitrate</string>
+    <string name="pref_default_audio_bitrate">64000</string>
+
+    <!-- Keys preferences -->
+    <string name="id_device">id_device</string>
+
+    <string name="video_size">video_size</string>
+    <string name="streaming_framerate">framerate</string>
+    <string name="bitrate">bitrate</string>
+
+    <string name="sample_rate">sample_rate</string>
+    <string name="audio_bitrate">audio_bitrate</string>
+
+    <string-array name="entries_spinner">
+        <item>Seleccione…</item>
+        <item>Robo</item>
+        <item>Asesinato</item>
+        <item>Contravención</item>
+        <item>Rutina</item>
+    </string-array>
+
+    <!-- TODO: Strings preferences general settings-->
+    <!-- Strings para la configuración del id del dispositivo -->
+    <string name="general_key_id_device">id_device</string>
+    <string name="pref_title_general_id_device">ID del dispositivo</string>
+    <string name="pref_summary_general_id_device">El identificador de la cámara</string>
+
+    <!-- Strings para la configuración de la contraseña de acceso a las configuraciones -->
+    <string name="pref_title_settings_password">Clave para la configuración</string>
+    <string name="pref_default_settings_password">123456</string>
+    <string name="pref_summary_settings_password">La contraseña para entrar a la ventana de configuración del dispositivo</string>
+    <string name="general_key_settings_password">settings_password</string>
+
+    <!-- Strings para la configuración del intervalo de tiempo de envio de la ubicación -->
+    <string name="pref_title_interval_location">Tiempo(s) de envío de la ubicación</string>
+    <string name="pref_summary_interval_location">Tiempo(segundos) del intervalo de envío de la ubicación</string>
+    <string name="pref_default_interval_location">10</string>
+    <string name="general_key_interval_location">interval_location</string>
+
+    <!-- Strings para la configuración del intervalo de tiempo de envio de la ubicación -->
+    <string name="pref_title_interval_location_sos">Tiempo(s) de envío de la ubicación en SOS</string>
+    <string name="pref_summary_interval_location_sos">Tiempo(segundos) del intervalo de envío de la ubicación en SOS</string>
+    <string name="pref_default_interval_location_sos">5</string>
+    <string name="general_key_interval_location_sos">interval_location_sos</string>
+
+    <!-- TODO: Strings preferences connection settings-->
+
+    <!-- Dirección del servidor-->
+    <string name="key_host_address">host_address</string>
+    <string name="pref_title_host_address">Dirección del servidor</string>
+    <string name="pref_default_host_address">10.50.4.3</string>
+    <!--string name="pref_default_host_address">10.80.63.236</string-->
+    <!--<string name="pref_default_host_address">10.126.0.229</string>-->
+
+    <!--string name="pref_default_host_address">52.24.232.162</string-->
+    <string name="pref_summary_host_address">El nombre del host o la dirección IP del servidor de streaming.</string>
+
+    <!-- Puerto del servidor-->
+    <string name="key_port_number">port_number</string>
+    <string name="pref_title_port_number">Numero del puerto</string>
+    <string name="pref_default_port_number">1935</string>
+    <string name="pref_summary_port_number">El número del puerto del servidor de streaming.</string>
+
+    <!-- Nombre de la app en el servidor-->
+    <string name="key_stream_app_name">stream_app_name</string>
+    <string name="pref_title_app_name">Nombre de la aplicación</string>
+    <string name="pref_default_app_name">live</string>
+    <string name="pref_summary_app_name">El nombre de la aplicación de streaming.</string>
+
+    <!-- Nombre del stream en el servidor-->
+    <string name="key_stream_name">stream_name</string>
+    <string name="pref_title_stream_name">Nombre del stream</string>
+    <string name="pref_default_stream_name">myStream</string>
+    <string name="pref_summary_stream_name">El nombre del streaming.</string>
+
+    <!-- Usuario para la autenticación en el servidor-->
+    <string name="pref_title_username">Nombre de usuario</string>
+    <string name="pref_default_username">tippi</string>
+    <!--string name="pref_default_username">titanlive</string-->
+    <string name="pref_summary_username">El usuario para la autenticación.</string>
+    <string name="key_username">username</string>
+
+    <!-- Contraseña para la autenticación en el servidor-->
+    <string name="key_password">password</string>
+    <string name="pref_title_password">Contraseña</string>
+    <string name="pref_summary_password">La contraseña para la autenticación.</string>
+    <string name="pref_default_password">Tpp1L1ve</string>
+    <!--string name="pref_default_password">T1t4nL1v3</string-->
+
+    <!-- TODO: Strings preferences local video-->
+    <!-- Keys preferences video local -->
+    <string name="local_key_video_size">local_video_size</string>
+    <string name="local_key_framerate">local_framerate</string>
+
+    <string name="local_key_vibrate_and_sound">local_vibrate_and_sound</string>
+    <string name="pref_summary_vibrate_and_sound">Emitir un sonido al momento de realizar una grabación local</string>
+
+    <string name="local_key_video_duration">local_video_duration</string>
+    <string name="local_key_post_recorder">local_post_recorder</string>
+    <string name="local_key_post_video_duration">local_key_post_video_duration</string>
+
+    <string name="pref_default_post_video_duration">2</string>
+    <string name="pref_summary_post_video_duration">Tiempo(minutos) de la duración del video post-grabado.</string>
+    <string name="pref_title_post_video_duration">Duración(m) del video de post-grabado.</string>
+
+    <string name="pref_default_local_video_duration">30</string>
+    <string name="pref_summary_local_video_duration">Tiempo(minutos) de la duración del video local.</string>
+    <string name="pref_title_local_video_duration">Duración(m) del video local.</string>
+
+    <string name="pref_title_post_recorder">Habilitar post-grabado</string>
+    <string name="pref_summary_post_recorder">Permite relizar post-grabado despues de cada grabación.</string>
+
+    <string name="pref_default_local_video_size">5</string>
+
+    <string-array name="pref_titles_local_video_size">
+        <item>1920 x 1080 Alto</item>
+        <item>1920 x 1080 Medio</item>
+        <item>1920 x 1080 Bajo</item>
+        <item>1280 x 720 Alto</item>
+        <item>1280 x 720 Medio</item>
+        <item>1280 x 720 Bajo</item>
+        <item>640 x 480 Alto</item>
+        <item>640 x 480 Medio</item>
+        <item>640 x 480 Bajo</item>
+    </string-array>
+
+    <string-array name="pref_values_local_video_size">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+
+    <string name="key_type_password">key_type_password</string>
+    <string name="key_type_text">key_type_text</string>
+
+    <!-- TODO: Strings preferences streaming video-->
+    <!-- Preferences and titles video streaming -->
+    <string name="streaming_key_video_size">streaming_video_size</string>
+    <string name="streaming_key_framerate">streaming_framerate</string>
+    <string name="pref_default_streaming_framerate">15</string>
+
+
+    <string name="streaming_key_vibrate_and_sound">streaming_vibrate_and_sound</string>
+    <string name="pref_streaming_title_vibrate_and_sound">Vibrar y sonar al realizar streaming</string>
+    <string name="pref_streaming_summary_vibrate_and_sound">Emitir un sonido al momento de hacer streaming</string>
+
+    <string name="pref_default_streaming_video_size">2</string>
+
+    <string-array name="pref_streaming_video_size_titles">
+        <item>320 x 240 Bajo</item>
+        <item>320 x 240 Medio</item>
+        <item>320 x 240 Alto</item>
+        <item>352 x 288 Bajo</item>
+        <item>352 x 288 Medio</item>
+        <item>352 x 288 Alto</item>
+        <item>480 x 320 Bajo</item>
+        <item>480 x 320 Medio</item>
+        <item>480 x 320 Alto</item>
+        <item>640 x 480 Bajo</item>
+        <item>640 x 480 Medio</item>
+        <item>640 x 480 Alto</item>
+        <item>800 x 600 Bajo</item>
+        <item>800 x 600 Medio</item>
+        <item>800 x 600 Alto</item>
+        <item>1280 x 720 Bajo</item>
+        <item>1280 x 720 Medio</item>
+        <item>1280 x 720 Alto</item>
+    </string-array>
+
+    <string-array name="pref_video_bitrates">
+        <item>140</item>
+        <item>280</item>
+        <item>560</item>
+        <item>700</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>2000</item>
+    </string-array>
+
+    <string-array name="pref_local_video_bitrates">
+        <item>5000</item>
+        <item>2500</item>
+        <item>1500</item>
+    </string-array>
+
+    <string-array name="pref_video_size_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+    </string-array>
+
+    <string-array name="pref_video_framerate">
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+    </string-array>
+
+    <!-- Strings para la configuración del id del dispositivo -->
+    <string name="key_device_id">device_id</string>
+    <string name="default_device_id"></string>
+    <string name="title_device_id">ID del dispositivo</string>
+
+    <!-- Strings para la configuración de la contraseña de acceso a la configuración -->
+    <string name="key_password_for_settings">password_for_settings</string>
+    <string name="default_password_for_settings">123456</string>
+    <string name="title_password_for_settings">Clave para configuración.</string>
+
+    <!-- Strings para la configuración del intervalo de ubicación -->
+    <string name="key_interval_location">interval_location</string>
+    <string name="default_interval_location">10</string>
+    <string name="title_interval_location">Intervalo de envío de la ubicación.</string>
+
+    <!-- Strings para la configuración del intervalo de ubicación en SOS-->
+    <string name="key_interval_location_sos">interval_location_sos</string>
+    <string name="default_interval_location_sos">5</string>
+    <string name="title_interval_location_sos">Intervalo de envío de la ubicación en SOS.</string>
+
+    <!-- Strings para la configuración de la resolución del video de streaming -->
+    <string name="key_streaming_video_size">streaming_video_size</string>
+    <string name="default_streaming_video_size">1</string>
+    <string name="title_streaming_video_size">Tamaño del video.</string>
+    <string-array name="streaming_video_sizes">
+        <item>320 x 240 Bajo</item>
+        <item>320 x 240 Medio</item>
+        <item>320 x 240 Alto</item>
+        <item>352 x 288 Bajo</item>
+        <item>352 x 288 Medio</item>
+        <item>352 x 288 Alto</item>
+        <item>480 x 320 Bajo</item>
+        <item>480 x 320 Medio</item>
+        <item>480 x 320 Alto</item>
+        <item>640 x 480 Bajo</item>
+        <item>640 x 480 Medio</item>
+        <item>640 x 480 Alto</item>
+        <item>800 x 600 Bajo</item>
+        <item>800 x 600 Medio</item>
+        <item>800 x 600 Alto</item>
+        <item>1280 x 720 Bajo</item>
+        <item>1280 x 720 Medio</item>
+        <item>1280 x 720 Alto</item>
+    </string-array>
+
+    <!-- Strings para la configuración de los FPS del streaming -->
+    <string name="key_streaming_framerate">streaming_framerate</string>
+    <string name="default_streaming_framerate">0</string>
+    <string name="title_framerate">Framerate.</string>
+    <string-array name="video_framerates">
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+    </string-array>
+
+    <!-- Strings para la configuración de vibrar y emitir un sonido cuando se hace streaming -->
+    <string name="key_streaming_vibrate_and_sound">streaming_vibrate_and_sound</string>
+    <string name="title_streaming_vibrate_and_sound">Vibrar y sonar al realizar streaming.</string>
+
+    <!-- Strings para la configuración de la resolución del video local -->
+    <string name="key_local_video_size">local_video_size</string>
+    <string name="default_local_video_size">5</string>
+    <string name="title_local_video_size">Tamaño del video.</string>
+    <string-array name="local_video_sizes">
+        <item>1920 x 1080 Alto</item>
+        <item>1920 x 1080 Medio</item>
+        <item>1920 x 1080 Bajo</item>
+        <item>1280 x 720 Alto</item>
+        <item>1280 x 720 Medio</item>
+        <item>1280 x 720 Bajo</item>
+        <item>640 x 480 Alto</item>
+        <item>640 x 480 Medio</item>
+        <item>640 x 480 Bajo</item>
+    </string-array>
+
+    <!-- Strings para la configuración de los FPS del video local -->
+    <string name="key_local_framerate">local_framerate</string>
+    <string name="default_local_framerate">3</string>
+
+    <!-- Strings para la configuración de la duración del video local-->
+    <string name="key_local_video_duration">local_video_duration</string>
+    <string name="default_local_video_duration">30</string>
+    <string name="title_local_video_duration">Duración del video local.</string>
+
+    <!-- Strings para la configuración de vibrar y emitir un sonido cuando se hace grabación local -->
+    <string name="key_local_vibrate_and_sound">local_vibrate_and_sound</string>
+    <string name="title_local_vibrate_and_sound">Vibrar y sonar al realizar grabación local.</string>
+
+    <!-- Strings para la configuración de habilitar post-grabado -->
+    <string name="key_post_record">post_record</string>
+    <string name="title_post_record">Habilitar post-grabado.</string>
+
+    <!-- Strings para la configuración de la duración del video de post-grabado-->
+    <string name="key_post_video_duration">post_video_duration</string>
+    <string name="default_post_video_duration">2</string>
+    <string name="title_post_video_duration">Duración del video de post-grabado.</string>
+
+    <!-- Strings para la configuración de la url del servidor MQTT-->
+    <string name="key_url_mqtt">url_mqtt</string>
+    <!--string name="default_url_mqtt">35.165.11.242</string-->
+    <string name="default_url_mqtt">10.50.4.3</string>
+    <!--string name="default_url_mqtt">10.80.63.236</string-->
+    <string name="title_url_mqtt">Url del servidor MQTT.</string>
+
+    <!-- Strings para la configuración del puerto del servidor MQTT-->
+    <string name="key_port_mqtt">port_mqtt</string>
+    <string name="default_port_mqtt">1883</string>
+    <string name="title_port_mqtt">Puerto del servidor MQTT.</string>
+
+    <!-- Strings para la configuración del usuario del servidor MQTT-->
+    <string name="key_username_mqtt">username_mqtt</string>
+    <!--string name="default_username_mqtt">mqadmin</string-->
+    <string name="default_username_mqtt">titanlive</string>
+    <string name="title_username_mqtt">Usuario del servidor MQTT.</string>
+
+    <!-- Strings para la configuración de la contraseña del servidor MQTT-->
+    <string name="key_password_mqtt">password_mqtt</string>
+    <!--string name="default_password_mqtt">Br0k3rM4gmnt</string-->
+    <string name="default_password_mqtt">T1t4nL1v3</string>
+    <string name="title_password_mqtt">Contraseña del servidor MQTT.</string>
+
+    <!-- Strings para la configuración de la url del servidor de aplicaciones-->
+    <string name="key_url_api">url_api</string>
+    <!--string name="default_url_api">http://52.24.232.162:8080/titan-live/api</string-->
+    <!--string name="default_url_api">http://10.50.4.3:8080/titan-live/api</string-->
+    <string name="default_url_api">http://10.80.63.235:8080/titan-live/api</string>
+    <string name="title_url_api">Url del servidor API.</string>
+
+    <string name="latitude">latitude</string>
+
+    <string name="longitude">longitude</string>
+
+    <!-- Strings para la configuración de la url del servidor de streaming-->
+    <string name="key_url_streaming">url_streaming</string>
+    <!--string name="default_url_streaming">52.24.232.162</string-->
+    <string name="default_url_streaming">10.50.4.3</string>
+    <!--string name="default_url_streaming">10.80.63.236</string-->
+
+    <string name="title_url_streaming">Url del servidor de streaming.</string>
+
+    <!-- Strings para la configuración del puerto del servidor de streaming-->
+    <string name="key_port_streaming">port_streaming</string>
+    <string name="default_port_streaming">1935</string>
+    <string name="title_port_streaming">Puerto del servidor de streaming.</string>
+
+    <!-- Strings para la configuración del nombre del servidor de streaming-->
+    <string name="key_app_name_streaming">app_name_streaming</string>
+    <string name="default_app_name_streaming">live</string>
+    <string name="title_app_name_streaming">Nombre del servidor de streaming.</string>
+
+    <!-- Strings para la configuración del usuario del servidor de streaming-->
+    <string name="key_username_streaming">username_streaming</string>
+    <string name="default_username_streaming">tippi</string>
+    <!--string name="default_username_streaming">titanlive</string-->
+    <string name="title_username_streaming">Usuario del servidor de streaming.</string>
+
+    <!-- Strings para la configuración de la contraseña del servidor de streaming-->
+    <string name="key_password_streaming">password_streaming</string>
+    <string name="default_password_streaming">Tpp1L1ve</string>
+    <!--string name="default_password_streaming">T1t4nL1v3</string-->
+    <string name="title_password_streaming">Contraseña del servidor de streaming.</string>
+
+    <!-- Strings para la configuración de la url del servidor de titan-->
+    <string name="key_url_titan">url_titan</string>
+    <string name="default_url_titan">http://10.50.4.3:8085/Evidencias-RestAPI/api/v1</string>
+    <!--string name="default_url_titan">http://10.80.63.235:8085/Evidencias-RestAPI/api/v1</string-->
+    <!--string name="default_url_titan">http://52.24.232.162:8085/Evidencias-RestAPI/api/v1</string-->
+    <string name="title_url_titan">Url del servidor Titan.</string>
+    <string name="key_logged_user">logged_user</string>
+
+    <string-array name="labels_tagging">
+        <item>Seleccione…</item>
+        <item>Accidente de transito</item>
+        <item>Alarma</item>
+        <item>Alteración tranquilidad public</item>
+        <item>Atraco</item>
+        <item>Captura</item>
+        <item>Desacato autoridad</item>
+        <item>Disparos</item>
+        <item>Herido o lesionado</item>
+        <item>Homicidio</item>
+        <item>Hurto calificado</item>
+        <item>Irrespeto autoridad</item>
+        <item>Menor en establecimiento publi</item>
+        <item>Narcóticos</item>
+        <item>Remisiones de valores</item>
+        <item>Requisa</item>
+        <item>Riña</item>
+        <item>Violación carnal</item>
+    </string-array>
+</resources>

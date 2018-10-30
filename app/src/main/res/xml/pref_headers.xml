@@ -1,0 +1,30 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- These settings headers are only used on tablets. -->
+
+    <header
+        android:fragment="com.bpt.tipi.streaming.activity.SettingsActivity$GeneralPreferenceFragment"
+        android:icon="@drawable/ic_general"
+        android:title="@string/pref_header_general_title" />
+
+    <header
+        android:fragment="com.bpt.tipi.streaming.activity.SettingsActivity$ConnectionPreferenceFragment"
+        android:icon="@drawable/ic_connection"
+        android:title="@string/pref_header_connection_title" />
+
+    <header
+        android:fragment="com.bpt.tipi.streaming.activity.SettingsActivity$VideoLocalPreferenceFragment"
+        android:icon="@drawable/ic_film"
+        android:title="@string/pref_header_local_title" />
+
+    <header
+        android:fragment="com.bpt.tipi.streaming.activity.SettingsActivity$StreamingPreferenceFragment"
+        android:icon="@drawable/ic_video"
+        android:title="@string/pref_header_streaming_title" />
+
+    <header
+        android:id="@+id/header_general_settings"
+        android:icon="@drawable/ic_cellphone_gray_24dp"
+        android:title="Configuración del dispositivo" />
+
+</preference-headers>

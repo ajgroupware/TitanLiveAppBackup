@@ -1,0 +1,62 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:autoText="false"
+        android:defaultValue="@string/pref_default_host_address"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:key="@string/key_host_address"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="@string/pref_summary_host_address"
+        android:title="@string/pref_title_host_address" />
+
+    <EditTextPreference
+        android:autoText="false"
+        android:defaultValue="@string/pref_default_port_number"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:key="@string/key_port_number"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="@string/pref_summary_port_number"
+        android:title="@string/pref_title_port_number" />
+
+    <EditTextPreference
+        android:autoText="false"
+        android:defaultValue="@string/pref_default_app_name"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:key="@string/key_stream_app_name"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="@string/pref_summary_app_name"
+        android:title="@string/pref_title_app_name" />
+
+    <EditTextPreference
+        android:autoText="false"
+        android:defaultValue="@string/pref_default_username"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:key="@string/key_username"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="@string/pref_summary_username"
+        android:title="@string/pref_title_username" />
+
+    <EditTextPreference
+        android:autoText="false"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:key="@string/key_password"
+        android:maxLines="1"
+        android:password="true"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="@string/pref_summary_password"
+        android:title="@string/pref_title_password" />
+
+</PreferenceScreen>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bpt.tipi.streaming.activity.SettingsActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlIdDevice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_general" />
+
+        <TextView
+            android:id="@+id/tvTitle1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toRightOf="@+id/image1"
+            android:maxLines="1"
+            android:text="ID del dispositivo"
+            android:textColor="@color/white_70"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvSubtitle1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitle1"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toRightOf="@+id/image1"
+            android:maxLines="2"
+            android:text="Configure el id del dispositivo para realizar la conexión al servidor."
+            android:textColor="@color/white_30"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white_70" />
+
+    <RelativeLayout
+        android:id="@+id/rlSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_settings_24" />
+
+        <TextView
+            android:id="@+id/tvTitle2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toRightOf="@+id/image2"
+            android:maxLines="1"
+            android:text="Configuración de la aplicación"
+            android:textColor="@color/white_70"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvSubtitle2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitle2"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toRightOf="@+id/image2"
+            android:maxLines="2"
+            android:text="Cofigure los parametros de conexión al servidor y los parametros de audio y video."
+            android:textColor="@color/white_30"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white_70" />
+
+    <RelativeLayout
+        android:id="@+id/rlSettingsPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_settings_phone" />
+
+        <TextView
+            android:id="@+id/tvTitle3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toRightOf="@+id/image3"
+            android:maxLines="1"
+            android:text="Configuración del dispositivo"
+            android:textColor="@color/white_70"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvSubtitle3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitle3"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toRightOf="@+id/image3"
+            android:maxLines="2"
+            android:text="Configuración general del dispositivo."
+            android:textColor="@color/white_30"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:autoText="false"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:key="@string/general_key_id_device"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:summary="@string/pref_summary_general_id_device"
+        android:title="@string/pref_title_general_id_device" />
+
+    <EditTextPreference
+        android:autoText="false"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:key="@string/general_key_settings_password"
+        android:maxLines="2"
+        android:password="true"
+        android:selectAllOnFocus="true"
+        android:summary="@string/pref_summary_settings_password"
+        android:title="@string/pref_title_settings_password" />
+
+    <EditTextPreference
+        android:autoText="false"
+        android:defaultValue="@string/pref_default_interval_location"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:key="@string/general_key_interval_location"
+        android:selectAllOnFocus="true"
+        android:summary="@string/pref_summary_interval_location"
+        android:title="@string/pref_title_interval_location" />
+
+    <EditTextPreference
+        android:autoText="false"
+        android:defaultValue="@string/pref_default_interval_location_sos"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:key="@string/general_key_interval_location_sos"
+        android:selectAllOnFocus="true"
+        android:summary="@string/pref_summary_interval_location_sos"
+        android:title="@string/pref_title_interval_location_sos" />
+
+</PreferenceScreen>

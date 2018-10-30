@@ -1,0 +1,30 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:defaultValue="2"
+        android:entries="@array/pref_streaming_video_size_titles"
+        android:entryValues="@array/pref_video_size_values"
+        android:key="@string/streaming_key_video_size"
+        android:negativeButtonText="@null"
+        android:numeric="integer"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_video_size" />
+
+    <ListPreference
+        android:defaultValue="@string/pref_default_streaming_framerate"
+        android:entries="@array/pref_video_framerate"
+        android:entryValues="@array/pref_video_framerate"
+        android:key="@string/streaming_key_framerate"
+        android:negativeButtonText="@null"
+        android:numeric="integer"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_framerate" />
+
+    <!-- NOTE: This preference will be enabled only when the checkbox above is checked. -->
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="@string/streaming_key_vibrate_and_sound"
+        android:summary="@string/pref_streaming_summary_vibrate_and_sound"
+        android:title="@string/pref_streaming_title_vibrate_and_sound" />
+
+</PreferenceScreen>

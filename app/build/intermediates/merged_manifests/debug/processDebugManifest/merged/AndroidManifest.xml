@@ -38,7 +38,8 @@
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:supportsRtl="true" >
+        android:supportsRtl="true"
+        android:testOnly="true" >
         <receiver
             android:name="com.bpt.tipi.streaming.receiver.USBConnectionReceiver"
             android:enabled="true" >

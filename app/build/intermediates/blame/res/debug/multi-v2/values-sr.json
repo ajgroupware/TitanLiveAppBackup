@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sr/values-sr.xml",
+            "outputFile": "C:\\Users\\juanc\\Desktop\\groupware\\TIPI\\titan\\from git\\TitanLiveApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sr\\values-sr.xml",
             "map": [
                 {
-                    "source": "/Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/ef7b4e6cc7a990d9f7b6ed9b1f3f1121/res/values-sr/values-sr.xml",
+                    "source": "C:\\Users\\juanc\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.0.aar\\4481697ea6e3df8d40e649e4ef072f59\\res\\values-sr\\values-sr.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/51eeb0b397b3cf7a8b6aeddee1523590/res/values-sr/values-sr.xml",
+                    "source": "C:\\Users\\juanc\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\3b57308a70e6df85040af814c2bbbaf8\\res\\values-sr\\values-sr.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

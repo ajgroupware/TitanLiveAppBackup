@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/alvarorodriguez/GroupWare/Projects/AndroidStudioProjects/titan-live-mobile/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mn/values-mn.xml",
+            "outputFile": "C:\\Users\\juanc\\Desktop\\groupware\\TIPI\\titan\\from git\\TitanLiveApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mn\\values-mn.xml",
             "map": [
                 {
-                    "source": "/Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/51eeb0b397b3cf7a8b6aeddee1523590/res/values-mn/values-mn.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,218,318,431,518,624,736,818,900,982,1091,1195,1292,1400,1501,1604,1763,1860",
-                        "endColumns": "112,99,112,86,105,111,81,81,81,108,103,96,107,100,102,158,96,80",
-                        "endOffsets": "213,313,426,513,619,731,813,895,977,1086,1190,1287,1395,1496,1599,1758,1855,1936"
-                    }
-                },
-                {
-                    "source": "/Users/alvarorodriguez/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/ef7b4e6cc7a990d9f7b6ed9b1f3f1121/res/values-mn/values-mn.xml",
+                    "source": "C:\\Users\\juanc\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.0.aar\\4481697ea6e3df8d40e649e4ef072f59\\res\\values-mn\\values-mn.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -28,6 +18,16 @@
                         "startOffsets": "1941",
                         "endColumns": "100",
                         "endOffsets": "2037"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\juanc\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\3b57308a70e6df85040af814c2bbbaf8\\res\\values-mn\\values-mn.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,218,318,431,518,624,736,818,900,982,1091,1195,1292,1400,1501,1604,1763,1860",
+                        "endColumns": "112,99,112,86,105,111,81,81,81,108,103,96,107,100,102,158,96,80",
+                        "endOffsets": "213,313,426,513,619,731,813,895,977,1086,1190,1287,1395,1496,1599,1758,1855,1936"
                     }
                 }
             ]

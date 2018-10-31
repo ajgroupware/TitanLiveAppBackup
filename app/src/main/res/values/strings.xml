@@ -119,7 +119,7 @@
     <string name="key_password">password</string>
     <string name="pref_title_password">Contraseña</string>
     <string name="pref_summary_password">La contraseña para la autenticación.</string>
-    <string name="pref_default_password">Tpp1L1ve</string>
+    <string name="pref_default_password">Tpp1L1v3</string>
     <!--string name="pref_default_password">T1t4nL1v3</string-->
 
     <!-- TODO: Strings preferences local video-->

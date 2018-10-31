@@ -92,7 +92,10 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
     private AudioRecord streamingAudioRecord;
     private StreamingAudioRecordRunnable streamingAudioRecordRunnable;
     private Thread streamingAudioThread;
-    volatile boolean streamingRunAudioThread = true;
+    /**
+     *el streamingRunAudioThread antes iniciaba en true pero al tomar foto se quedaba el streaming corriendo for ever
+     */
+    volatile boolean streamingRunAudioThread = false;
     long streamingStartTime = 0;
     public boolean isStreamingRecording = false;
 
@@ -384,6 +387,11 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
                     if (camera != null) {
                         camera.addCallbackBuffer(buffer);
                     }
+                    if (takePhoto) {
+                        takePhoto = false;
+                        savePhoto(bytes);
+                        machineHandler.sendEmptyMessage(StateMachineHandler.TAKE_PHOTO);
+                    }
                 }
             });
 
@@ -481,6 +489,12 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
                     if (primaryCamera != null) {
                         primaryCamera.addCallbackBuffer(primaryBuffer);
                     }
+
+                    /*if (takePhoto) {
+                        takePhoto = false;
+                        savePhoto(bytes);
+                        machineHandler.sendEmptyMessage(StateMachineHandler.TAKE_PHOTO);
+                    }*/
                 }
             });
             try {
@@ -943,12 +957,6 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
 
         if (camera != null) {
             camera.addCallbackBuffer(buffer);
-        }
-
-        if (takePhoto) {
-            takePhoto = false;
-            savePhoto(bytes);
-            machineHandler.sendEmptyMessage(StateMachineHandler.TAKE_PHOTO);
         }
     }
 

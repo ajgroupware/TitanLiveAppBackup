@@ -4,7 +4,6 @@ import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 
-import com.bpt.tipi.streaming.helper.IrHelper;
 import com.bpt.tipi.streaming.service.RecorderService;
 
 /**
@@ -13,20 +12,21 @@ import com.bpt.tipi.streaming.service.RecorderService;
 
 public class StateMachineHandler extends Handler {
 
-    private RecorderService mRecorderService;
+    private RecorderService cameraService;
 
     private StateMachine state = StateMachine.INIT;
 
     public static final int LOCAL_RECORDER_PRESSED = 1;
     public static final int STREAMING = 3;
     public static final int POST_RECORDING = 4;
+    public static final int TAKE_PHOTO = 5;
 
     public static final int PLAY_SOUND = 0;
     public static final int DO_NOT_PLAY_SOUND = 1;
 
-    public StateMachineHandler(RecorderService recorderService) {
+    public StateMachineHandler(RecorderService cameraService) {
         Log.i("Depuracion", "New instance StateMachineHandler");
-        this.mRecorderService = recorderService;
+        this.cameraService = cameraService;
     }
 
     @Override
@@ -36,48 +36,68 @@ public class StateMachineHandler extends Handler {
             case LOCAL_RECORDER_PRESSED:
                 switch (state) {
                     case INIT:
-                        state = StateMachine.LR;
                         if (msg.arg1 == DO_NOT_PLAY_SOUND) {
-                            StateMachineActionHandler.manageState(mRecorderService, StateAction.LR_START_WITHOUT_SOUND);
+                            StateMachineActionHandler.manageState(cameraService, StateAction.LR_STOP_WITHOUT_SOUND, StateAction.LR_START_WITHOUT_SOUND);
                         } else {
-                            StateMachineActionHandler.manageState(mRecorderService, StateAction.LR_START);
+                            state = StateMachine.LR;
+                            StateMachineActionHandler.manageState(cameraService, StateAction.CAMERA_START, StateAction.AUDIO_START, StateAction.LR_START);
                         }
-                        break;
-                    case ST:
-                        state = StateMachine.LR_ST;
-                        StateMachineActionHandler.manageState(mRecorderService, StateAction.LR_START);
                         break;
                     case LR:
                         if (msg.arg1 == DO_NOT_PLAY_SOUND) {
-                            state = StateMachine.INIT;
-                            StateMachineActionHandler.manageState(mRecorderService, StateAction.LR_STOP_WITHOUT_SOUND);
-                        } else if (ConfigHelper.getLocalPostRecorder(mRecorderService.context)) {
-                            state = StateMachine.LR_PR;
-                            StateMachineActionHandler.manageState(mRecorderService, StateAction.PR_START);
+                            StateMachineActionHandler.manageState(cameraService, StateAction.LR_STOP_WITHOUT_SOUND, StateAction.LR_START_WITHOUT_SOUND);
                         } else {
                             state = StateMachine.INIT;
-                            StateMachineActionHandler.manageState(mRecorderService, StateAction.LR_STOP);
+                            StateMachineActionHandler.manageState(cameraService, StateAction.CAMERA_STOP, StateAction.AUDIO_STOP, StateAction.LR_STOP);
+                        }
+                        break;
+                    case ST:
+                        if (msg.arg1 == DO_NOT_PLAY_SOUND) {
+                            StateMachineActionHandler.manageState(cameraService, StateAction.LR_START_WITHOUT_SOUND);
+                        } else {
+                            state = StateMachine.LR_ST;
+                            StateMachineActionHandler.manageState(cameraService, StateAction.LR_START);
                         }
                         break;
                     case LR_ST:
                         if (msg.arg1 == DO_NOT_PLAY_SOUND) {
-                            state = StateMachine.ST;
-                            StateMachineActionHandler.manageState(mRecorderService, StateAction.LR_STOP_WITHOUT_SOUND);
-                        } else if (ConfigHelper.getLocalPostRecorder(mRecorderService.context)) {
-                            state = StateMachine.LR_ST_PR;
-                            StateMachineActionHandler.manageState(mRecorderService, StateAction.PR_START);
+                            StateMachineActionHandler.manageState(cameraService, StateAction.LR_STOP_WITHOUT_SOUND, StateAction.LR_START_WITHOUT_SOUND);
                         } else {
                             state = StateMachine.ST;
-                            StateMachineActionHandler.manageState(mRecorderService, StateAction.LR_STOP);
+                            StateMachineActionHandler.manageState(cameraService, StateAction.LR_STOP);
                         }
                         break;
-                    case LR_PR:
-                        state = StateMachine.LR;
-                        StateMachineActionHandler.manageState(mRecorderService, StateAction.PR_STOP, StateAction.LR_START);
+                    case PH:
+                        if (msg.arg1 == DO_NOT_PLAY_SOUND) {
+                            StateMachineActionHandler.manageState(cameraService, StateAction.AUDIO_START, StateAction.LR_START_WITHOUT_SOUND);
+                        } else {
+                            state = StateMachine.LR_PH;
+                            StateMachineActionHandler.manageState(cameraService, StateAction.AUDIO_START, StateAction.LR_START);
+                        }
                         break;
-                    case LR_ST_PR:
-                        state = StateMachine.LR_ST;
-                        StateMachineActionHandler.manageState(mRecorderService, StateAction.PR_STOP, StateAction.LR_START);
+                    case LR_PH:
+                        if (msg.arg1 == DO_NOT_PLAY_SOUND) {
+                            StateMachineActionHandler.manageState(cameraService, StateAction.LR_STOP_WITHOUT_SOUND, StateAction.LR_START_WITHOUT_SOUND);
+                        } else {
+                            state = StateMachine.PH;
+                            StateMachineActionHandler.manageState(cameraService, StateAction.AUDIO_STOP, StateAction.LR_STOP);
+                        }
+                        break;
+                    case ST_PH:
+                        if (msg.arg1 == DO_NOT_PLAY_SOUND) {
+                            StateMachineActionHandler.manageState(cameraService, StateAction.LR_START_WITHOUT_SOUND);
+                        } else {
+                            state = StateMachine.LR_ST_PH;
+                            StateMachineActionHandler.manageState(cameraService, StateAction.LR_START);
+                        }
+                        break;
+                    case LR_ST_PH:
+                        if (msg.arg1 == DO_NOT_PLAY_SOUND) {
+                            StateMachineActionHandler.manageState(cameraService, StateAction.LR_STOP_WITHOUT_SOUND, StateAction.LR_START_WITHOUT_SOUND);
+                        } else {
+                            state = StateMachine.ST_PH;
+                            StateMachineActionHandler.manageState(cameraService, StateAction.LR_STOP);
+                        }
                         break;
                 }
                 break;
@@ -85,40 +105,71 @@ public class StateMachineHandler extends Handler {
                 switch (state) {
                     case INIT:
                         state = StateMachine.ST;
-                        StateMachineActionHandler.manageState(mRecorderService, StateAction.STREAMING_START);
+                        StateMachineActionHandler.manageState(cameraService, StateAction.CAMERA_START, StateAction.AUDIO_START, StateAction.STREAMING_START);
                         break;
                     case ST:
                         state = StateMachine.INIT;
-                        StateMachineActionHandler.manageState(mRecorderService, StateAction.STREAMING_STOP);
+                        StateMachineActionHandler.manageState(cameraService, StateAction.CAMERA_STOP, StateAction.AUDIO_STOP, StateAction.STREAMING_STOP);
                         break;
                     case LR:
                         state = StateMachine.LR_ST;
-                        //StateMachineActionHandler.manageState(mRecorderService, StateAction.LR_STOP_WITHOUT_SOUND, StateAction.STREAMING_START, StateAction.LR_START_WITHOUT_SOUND);
-                        StateMachineActionHandler.manageState(mRecorderService, StateAction.STREAMING_START);
+                        StateMachineActionHandler.manageState(cameraService, StateAction.STREAMING_START);
                         break;
                     case LR_ST:
                         state = StateMachine.LR;
-                        //StateMachineActionHandler.manageState(mRecorderService, StateAction.LR_STOP_WITHOUT_SOUND, StateAction.STREAMING_STOP, StateAction.LR_START_WITHOUT_SOUND);
-                        StateMachineActionHandler.manageState(mRecorderService, StateAction.STREAMING_STOP);
+                        StateMachineActionHandler.manageState(cameraService, StateAction.STREAMING_STOP);
                         break;
-                    case LR_PR:
-                        state = StateMachine.ST;
-                        StateMachineActionHandler.manageState(mRecorderService, StateAction.PR_STOP, StateAction.STREAMING_START);
+                    case PH:
+                        state = StateMachine.ST_PH;
+                        StateMachineActionHandler.manageState(cameraService, StateAction.AUDIO_START, StateAction.STREAMING_START);
                         break;
-                    case LR_ST_PR:
-                        state = StateMachine.INIT;
-                        StateMachineActionHandler.manageState(mRecorderService, StateAction.PR_STOP, StateAction.STREAMING_STOP);
-
+                    case ST_PH:
+                        state = StateMachine.PH;
+                        StateMachineActionHandler.manageState(cameraService, StateAction.AUDIO_STOP, StateAction.STREAMING_STOP);
+                        break;
+                    case LR_PH:
+                        state = StateMachine.LR_ST_PH;
+                        StateMachineActionHandler.manageState(cameraService, StateAction.STREAMING_START);
+                        break;
+                    case LR_ST_PH:
+                        state = StateMachine.LR_PH;
+                        StateMachineActionHandler.manageState(cameraService, StateAction.STREAMING_STOP);
+                        break;
                 }
                 break;
-            case POST_RECORDING:
-                state = StateMachine.INIT;
-                StateMachineActionHandler.manageState(mRecorderService, StateAction.PR_STOP);
+            case TAKE_PHOTO:
+                switch (state) {
+                    case INIT:
+                        state = StateMachine.PH;
+                        StateMachineActionHandler.manageState(cameraService, StateAction.CAMERA_START, StateAction.TAKE_PHOTO);
+                        break;
+                    case PH:
+                        state = StateMachine.INIT;
+                        StateMachineActionHandler.manageState(cameraService, StateAction.CAMERA_STOP);
+                        break;
+                    case ST:
+                        state = StateMachine.ST_PH;
+                        StateMachineActionHandler.manageState(cameraService, StateAction.TAKE_PHOTO);
+                        break;
+                    case LR:
+                        state = StateMachine.LR_PH;
+                        StateMachineActionHandler.manageState(cameraService, StateAction.TAKE_PHOTO);
+                        break;
+                    case LR_ST:
+                        state = StateMachine.LR_ST_PH;
+                        StateMachineActionHandler.manageState(cameraService, StateAction.TAKE_PHOTO);
+                        break;
+                    case LR_ST_PH:
+                        state = StateMachine.LR_ST;
+                        break;
+                    case ST_PH:
+                        state = StateMachine.ST;
+                        break;
+                    case LR_PH:
+                        state = StateMachine.LR;
+                        break;
+                }
                 break;
-        }
-        Log.i("Depuracion", "Curr State " + state);
-        if (state == StateMachine.INIT) {
-            IrHelper.setIrState(IrHelper.STATE_OFF);
         }
     }
 }

@@ -6,7 +6,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.ImageFormat;
+import android.graphics.Rect;
 import android.graphics.SurfaceTexture;
+import android.graphics.YuvImage;
 import android.hardware.Camera;
 import android.media.AudioFormat;
 import android.media.AudioRecord;
@@ -44,6 +46,8 @@ import org.opencv.core.CvType;
 import org.opencv.core.Mat;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.ShortBuffer;
@@ -117,6 +121,8 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
 
     long mStartTX;
     Date streamingStarted;
+
+    boolean takePhoto = false;
 
     StateMachineHandler machineHandler;
 
@@ -214,6 +220,9 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
                         proccesingStreming = false;
                     }
                 }
+                break;
+            case MessageEvent.TAKE_PHOTO:
+                machineHandler.sendEmptyMessage(StateMachineHandler.TAKE_PHOTO);
                 break;
             case MessageEvent.STATE_FLASH:
                 if (!flashOn) {
@@ -934,6 +943,40 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
 
         if (camera != null) {
             camera.addCallbackBuffer(buffer);
+        }
+
+        if (takePhoto) {
+            takePhoto = false;
+            savePhoto(bytes);
+            machineHandler.sendEmptyMessage(StateMachineHandler.TAKE_PHOTO);
+        }
+    }
+
+    public void takePhoto() {
+        takePhoto = true;
+    }
+
+    public void savePhoto(byte[] data) {
+        FileOutputStream file = null;
+        try {
+            Camera.Parameters parameters = camera.getParameters();
+            Camera.Size size = parameters.getPreviewSize();
+            YuvImage image = new YuvImage(data, parameters.getPreviewFormat(),
+                    size.width, size.height, null);
+            file = new FileOutputStream(VideoNameHelper.getNamePhoto(context));
+            image.compressToJpeg(
+                    new Rect(0, 0, image.getWidth(), image.getHeight()), 90,
+                    file);
+            CameraRecorderHelper.soundTakePhoto(context);
+        } catch (FileNotFoundException e) {
+
+        }
+        finally {
+            try {
+                file.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 

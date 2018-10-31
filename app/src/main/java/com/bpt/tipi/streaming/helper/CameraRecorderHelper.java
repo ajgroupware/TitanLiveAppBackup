@@ -454,4 +454,16 @@ public class CameraRecorderHelper {
         mPlayer.start();
         ((Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE)).vibrate(800);
     }
+
+    public static void soundTakePhoto(Context context) {
+        MediaPlayer mPlayer = MediaPlayer.create(context, R.raw.audio_take_photo);
+        mPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                mp.stop();
+                mp.release();
+            }
+        });
+        mPlayer.start();
+    }
 }

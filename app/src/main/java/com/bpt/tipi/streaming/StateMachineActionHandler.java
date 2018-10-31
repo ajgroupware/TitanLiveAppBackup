@@ -10,6 +10,12 @@ public class StateMachineActionHandler {
     static void manageState(RecorderService recorderService, StateAction... actions) {
         for (StateAction action : actions) {
             switch (action) {
+                case CAMERA_START:
+                    recorderService.initCamera();
+                    break;
+                case CAMERA_STOP:
+                    recorderService.finishCamera();
+                    break;
                 case LR_START:
                     recorderService.initLocalVideoCounter();
                     recorderService.startLocalRecorder(true);
@@ -43,6 +49,9 @@ public class StateMachineActionHandler {
                 case PR_STOP:
                     recorderService.pausePostVideoCounter();
                     recorderService.stopLocalRecorder(false);
+                    break;
+                case TAKE_PHOTO:
+                    recorderService.takePhoto();
                     break;
             }
         }

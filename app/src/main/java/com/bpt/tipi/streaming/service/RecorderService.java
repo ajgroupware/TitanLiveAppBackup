@@ -319,11 +319,12 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
             }
         }
         if (camera != null) {
+            //camera.setDisplayOrientation(270);
             Camera.Parameters parameters = camera.getParameters();
 
             parameters.setPreviewSize(CameraRecorderHelper.getStreamingImageWidth(context), CameraRecorderHelper.getStreamingImageHeight(context));
             parameters.setPreviewFrameRate(ConfigHelper.getStreamingFramerate(context));
-
+            //parameters.setRotation(270);
             parameters.setPreviewFormat(ImageFormat.NV21);
             camera.setParameters(parameters);
 
@@ -389,7 +390,7 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
                 e.printStackTrace();
                 //finishCamera();
             }
-            IrHelper.setIrState(IrHelper.STATE_ON);
+            //IrHelper.setIrState(IrHelper.STATE_ON);
         } else {
             Log.d(TAG, "Get camera from service failed");
         }
@@ -575,7 +576,7 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
                     camera.release();
                     camera = null;
                 }
-                IrHelper.setIrState(IrHelper.STATE_OFF);
+                //IrHelper.setIrState(IrHelper.STATE_OFF);
             } catch (Exception e) {
                 e.printStackTrace();
             }

@@ -24,8 +24,9 @@ import org.greenrobot.eventbus.ThreadMode;
 
 public class MqttService extends Service {
 
-    private static final String URL = "tcp://10.50.4.3:1883"; //Tigo Avantel
+    //private static final String URL = "tcp://10.50.4.3:1883"; //Tigo Avantel
     //private static final String URL = "tcp://35.165.11.242:1883";
+    private static final String URL = "tcp://54.218.193.119:1883";
     //private static final String URL = "tcp://10.80.63.236:1883"; //Movistar
     //private static final String URL = "tcp://10.126.0.229:1883";
 

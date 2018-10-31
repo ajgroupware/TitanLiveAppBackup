@@ -30,14 +30,19 @@ public class HttpClient {
     //public static final String URL_ALT = "http://52.24.232.162:8081/Evidencias-RestAPI/api/v1";
     //--
 
+    //Amazon titanlive
+    public static final String URL = "http://54.218.193.119:8080/titan-live/api";
+    public static final String URL_ALT = "http://54.218.193.119:8081/Evidencias-RestAPI/api/v1";
+    //--
+
     //movistar
     //public static final String URL = "http://10.80.63.235:8080/titan-live/api";
     //public static final String URL_ALT = "http://10.80.63.235:8081/Evidencias-RestAPI/api/v1";
     //--
 
     //Tigo y Avantel
-    public static final String URL = "http://10.50.4.1:8080/titan-live/api";
-    public static final String URL_ALT = "http://10.50.4.1:8081/Evidencias-RestAPI/api/v1";
+    //public static final String URL = "http://10.50.4.1:8080/titan-live/api";
+    //public static final String URL_ALT = "http://10.50.4.1:8081/Evidencias-RestAPI/api/v1";
     //--
 
     private HttpInterface mHttpInterface;

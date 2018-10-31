@@ -82,7 +82,8 @@
     <!-- Dirección del servidor-->
     <string name="key_host_address">host_address</string>
     <string name="pref_title_host_address">Dirección del servidor</string>
-    <string name="pref_default_host_address">10.50.4.3</string>
+    <!--string name="pref_default_host_address">10.50.4.3</string-->
+    <string name="pref_default_host_address">54.218.193.119</string>
     <!--string name="pref_default_host_address">10.80.63.236</string-->
     <!--<string name="pref_default_host_address">10.126.0.229</string>-->
 

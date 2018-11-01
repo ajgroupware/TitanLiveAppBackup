@@ -12,6 +12,8 @@ public class StateMachineActionHandler {
             switch (action) {
                 case CAMERA_START:
                     recorderService.initCamera();
+                    //recorderService.initPhotoCamera();
+                    //recorderService.initPrimaryCamera();
                     break;
                 case CAMERA_STOP:
                     recorderService.finishCamera();

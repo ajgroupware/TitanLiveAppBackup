@@ -33,8 +33,10 @@ import com.bpt.tipi.streaming.helper.IrHelper;
 import com.bpt.tipi.streaming.helper.VideoNameHelper;
 import com.bpt.tipi.streaming.model.MessageEvent;
 
+import org.bytedeco.javacv.FFmpegFrameFilter;
 import org.bytedeco.javacv.FFmpegFrameRecorder;
 import org.bytedeco.javacv.Frame;
+import org.bytedeco.javacv.FrameFilter;
 import org.bytedeco.javacv.FrameRecorder;
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -54,6 +56,8 @@ import java.nio.ShortBuffer;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+
+import static org.bytedeco.javacpp.avutil.AV_PIX_FMT_NV21;
 
 public class RecorderService extends Service implements Camera.PreviewCallback {
 
@@ -256,7 +260,6 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
             try {
                 camera = Camera.open(Camera.CameraInfo.CAMERA_FACING_BACK);
 
-
                 Camera.Parameters parameters = camera.getParameters();
 
                 parameters.setPreviewSize(CameraRecorderHelper.getStreamingImageWidth(context), CameraRecorderHelper.getStreamingImageHeight(context));
@@ -326,6 +329,9 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
 
             try {
                 camera = Camera.open(Camera.CameraInfo.CAMERA_FACING_BACK);
+                if(takePhoto){
+                    camera = Camera.open(Camera.CameraInfo.CAMERA_FACING_FRONT);
+                }
             } catch (Exception e) {
                 Log.d("TAG", "Open camera failed: " + e);
             }
@@ -335,10 +341,12 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
             Camera.Parameters parameters = camera.getParameters();
 
             parameters.setPreviewSize(CameraRecorderHelper.getStreamingImageWidth(context), CameraRecorderHelper.getStreamingImageHeight(context));
+            //parameters.setPreviewSize(CameraRecorderHelper.getStreamingImageHeight(context),CameraRecorderHelper.getStreamingImageWidth(context));
             parameters.setPreviewFrameRate(ConfigHelper.getStreamingFramerate(context));
             //parameters.setRotation(270);
             parameters.setPreviewFormat(ImageFormat.NV21);
             camera.setParameters(parameters);
+            //camera.setDisplayOrientation(270);
 
             int height = parameters.getPreviewSize().height;
             switch (height) {
@@ -358,6 +366,8 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
             profile.videoFrameRate = parameters.getPreviewFrameRate();
             profile.videoFrameWidth = parameters.getPreviewSize().width;
             profile.videoFrameHeight = parameters.getPreviewSize().height;
+            //profile.videoFrameWidth = parameters.getPreviewSize().height;
+            //profile.videoFrameHeight = parameters.getPreviewSize().width;
 
             int size = CameraRecorderHelper.getStreamingImageWidth(context) * CameraRecorderHelper.getStreamingImageHeight(context);
 
@@ -381,7 +391,17 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
                     mat.get(0, 0, b);
 
                     if (isStreamingRecording) {
-                        streamingRecord(b);
+                        final FFmpegFrameFilter filter = new FFmpegFrameFilter(
+                                "transpose=cclock_flip",
+                                CameraRecorderHelper.getStreamingImageWidth(context),
+                                CameraRecorderHelper.getStreamingImageHeight(context));
+                        filter.setPixelFormat(AV_PIX_FMT_NV21); // default camera format on Android
+                        try {
+                            filter.start();
+                        } catch (FrameFilter.Exception e) {
+                            e.printStackTrace();
+                        }
+                        streamingRecord(b, filter);
                     }
 
                     if (camera != null) {
@@ -490,11 +510,11 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
                         primaryCamera.addCallbackBuffer(primaryBuffer);
                     }
 
-                    /*if (takePhoto) {
+                    if (takePhoto) {
                         takePhoto = false;
                         savePhoto(bytes);
                         machineHandler.sendEmptyMessage(StateMachineHandler.TAKE_PHOTO);
-                    }*/
+                    }
                 }
             });
             try {
@@ -514,6 +534,11 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
         }
 //            }
 //        });
+    }
+
+    public void initPhotoCamera(){
+        takePhoto = true;
+        initCamera();
     }
 
     public void initCamera_(final boolean localConfig) {
@@ -952,7 +977,7 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
         mat.get(0, 0, b);
 
         if (isStreamingRecording) {
-            streamingRecord(b);
+            streamingRecord(b, null);
         }
 
         if (camera != null) {
@@ -1039,11 +1064,12 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
         }
     }
 
-    public void streamingRecord(byte[] data) {
+    public void streamingRecord(byte[] data, FFmpegFrameFilter filter) {
         if (streamingAudioRecord == null || streamingAudioRecord.getRecordingState() != AudioRecord.RECORDSTATE_RECORDING) {
             streamingStartTime = System.currentTimeMillis();
             return;
         }
+
 
         if (streamingRecorder != null && streamingYuvImage != null && isStreamingRecording) {
             ((ByteBuffer) streamingYuvImage.image[0].position(0)).put(data);
@@ -1053,13 +1079,20 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
                     streamingRecorder.setTimestamp(t);
                 }
                 synchronized (this) {
-                    streamingRecorder.record(streamingYuvImage);
+                    //streamingRecorder.record(streamingYuvImage);
+                    filter.push(streamingYuvImage);
+                    Frame frame;
+                    while ((frame = filter.pull()) != null) {
+                        streamingRecorder.record(frame);
+                    }
                 }
             } catch (FFmpegFrameRecorder.Exception e) {
                 Log.v(TAG, e.getMessage());
                 e.printStackTrace();
                 MessageEvent event = new MessageEvent(MessageEvent.STOP_STREAMING);
                 bus.post(event);
+            } catch (FrameFilter.Exception e) {
+                e.printStackTrace();
             }
         }
     }

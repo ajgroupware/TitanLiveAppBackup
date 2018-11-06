@@ -26,13 +26,13 @@ import java.io.UnsupportedEncodingException;
 public class HttpClient {
 
     //Amazon
-    //public static final String URL = "http://52.24.232.162:8080/titan-live/api";
-    //public static final String URL_ALT = "http://52.24.232.162:8081/Evidencias-RestAPI/api/v1";
+    public static final String URL = "http://52.24.232.162:8080/titan-live/api";
+    public static final String URL_ALT = "http://52.24.232.162:8081/Evidencias-RestAPI/api/v1";
     //--
 
     //Amazon titanlive
-    public static final String URL = "http://54.218.193.119:8080/titan-live/api";
-    public static final String URL_ALT = "http://54.218.193.119:8081/Evidencias-RestAPI/api/v1";
+    //public static final String URL = "http://54.218.193.119:8080/titan-live/api";
+    //public static final String URL_ALT = "http://54.218.193.119:8081/Evidencias-RestAPI/api/v1";
     //--
 
     //movistar

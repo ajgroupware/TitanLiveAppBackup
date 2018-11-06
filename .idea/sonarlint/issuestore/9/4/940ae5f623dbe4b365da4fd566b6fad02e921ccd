@@ -1,0 +1,13 @@
+
+U"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(Όγϊÿ8Ά“υθμ,
+rsquid:S1192"QDefine a constant instead of duplicating this literal "application/json" 3 times.(Ρ‚δύÿÿÿÿ8Ά“υθμ,
+lsquid:S1192"KDefine a constant instead of duplicating this literal "Depuracion" 5 times.(”¶“ωÿÿÿÿ8Ά“υθμ,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(κ¤—‚8Ά“υθμ,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Μκ–8Ά“υθμ,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Λ–Νε8Ά“υθμ,
+fsquid:CallToDeprecatedMethod"4Remove this use of "StringEntity"; it is deprecated.(ί΄τƒϊÿÿÿÿ8Ά“υθμ,
+fsquid:CallToDeprecatedMethod"4Remove this use of "StringEntity"; it is deprecated.(¬ΔΌςόÿÿÿÿ8Ά“υθμ,
+`squid:CallToDeprecatedMethod".Remove this use of "Header"; it is deprecated.(πΠ—φϊÿÿÿÿ8Ά“υθμ,
+[squid:CallToDeprecatedMethod".Remove this use of "Header"; it is deprecated.(‘ΛΩο8Ά“υθμ,
+[squid:CallToDeprecatedMethod".Remove this use of "Header"; it is deprecated.(Γ΄­κ8Ά“υθμ,
+Dsquid:S1148"#Use a logger to log this exception.(€ΙΤ…ύÿÿÿÿ8Ά“υθμ,

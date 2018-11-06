@@ -29,6 +29,7 @@ import org.opencv.core.Core;
 import org.opencv.core.Mat;
 import org.opencv.core.Point;
 import org.opencv.core.Scalar;
+import org.opencv.core.Size;
 import org.opencv.imgproc.Imgproc;
 
 import java.io.UnsupportedEncodingException;
@@ -53,32 +54,54 @@ public class CameraRecorderHelper {
     private static final Scalar TEXT_COLOR = new Scalar(255, 255, 255);
 
     public static void putWaterMark(Mat mat, String text, String text2) {
+
+        //Calculate size of new matrix
+        double radians = Math.toRadians(270);
+        double sin = Math.abs(Math.sin(radians));
+        double cos = Math.abs(Math.cos(radians));
+
+        int newWidth = (int) (mat.width() * cos + mat.height() * sin);
+        int newHeight = (int) (mat.width() * sin + mat.height() * cos);
+
+        // rotating image
+        Point center = new Point(newWidth / 2, newHeight / 2);
+
+
+        //Creating the transformation matrix M
+        Mat rotationMatrix = Imgproc.getRotationMatrix2D(center, 270, 1);
         switch (mat.rows()) {
             case 240:
+                Imgproc.warpAffine(mat, mat,rotationMatrix, mat.size());
                 Imgproc.putText(mat, text, new Point(2, 10), Core.FONT_HERSHEY_COMPLEX_SMALL, 0.45, TEXT_COLOR);
                 Imgproc.putText(mat, text2, new Point(2, 115), Core.FONT_HERSHEY_COMPLEX_SMALL, 0.45, TEXT_COLOR);
                 break;
             case 288:
+                Imgproc.warpAffine(mat, mat,rotationMatrix, mat.size());
                 Imgproc.putText(mat, text, new Point(2, 10), Core.FONT_HERSHEY_COMPLEX_SMALL, 0.45, TEXT_COLOR);
                 Imgproc.putText(mat, text2, new Point(2, 140), Core.FONT_HERSHEY_COMPLEX_SMALL, 0.45, TEXT_COLOR);
                 break;
             case 320:
+                Imgproc.warpAffine(mat, mat,rotationMatrix, mat.size());
                 Imgproc.putText(mat, text, new Point(2, 10), Core.FONT_HERSHEY_COMPLEX_SMALL, 0.45, TEXT_COLOR);
                 Imgproc.putText(mat, text2, new Point(2, 150), Core.FONT_HERSHEY_COMPLEX_SMALL, 0.45, TEXT_COLOR);
                 break;
             case 480:
+                Imgproc.warpAffine(mat, mat,rotationMatrix, mat.size());
                 Imgproc.putText(mat, text, new Point(2, 20), Core.FONT_HERSHEY_COMPLEX_SMALL, 0.7, TEXT_COLOR);
                 Imgproc.putText(mat, text2, new Point(2, 230), Core.FONT_HERSHEY_COMPLEX_SMALL, 0.7, TEXT_COLOR);
                 break;
             case 600:
+                Imgproc.warpAffine(mat, mat,rotationMatrix, mat.size());
                 Imgproc.putText(mat, text, new Point(2, 20), Core.FONT_HERSHEY_COMPLEX_SMALL, 1, TEXT_COLOR);
                 Imgproc.putText(mat, text2, new Point(2, 290), Core.FONT_HERSHEY_COMPLEX_SMALL, 1, TEXT_COLOR);
                 break;
             case 720:
+                Imgproc.warpAffine(mat, mat,rotationMatrix, mat.size());
                 Imgproc.putText(mat, text, new Point(2, 20), Core.FONT_HERSHEY_COMPLEX_SMALL, 1, TEXT_COLOR);
                 Imgproc.putText(mat, text2, new Point(2, 340), Core.FONT_HERSHEY_COMPLEX_SMALL, 1, TEXT_COLOR);
                 break;
             case 1080:
+                Imgproc.warpAffine(mat, mat,rotationMatrix, mat.size());
                 Imgproc.putText(mat, text, new Point(2, 30), Core.FONT_HERSHEY_COMPLEX_SMALL, 1.5, TEXT_COLOR);
                 Imgproc.putText(mat, text2, new Point(2, 500), Core.FONT_HERSHEY_COMPLEX_SMALL, 1.5, TEXT_COLOR);
                 break;

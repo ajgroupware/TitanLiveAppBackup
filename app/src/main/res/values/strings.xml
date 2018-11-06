@@ -83,11 +83,13 @@
     <string name="key_host_address">host_address</string>
     <string name="pref_title_host_address">Dirección del servidor</string>
     <!--string name="pref_default_host_address">10.50.4.3</string-->
+<!--
     <string name="pref_default_host_address">54.218.193.119</string>
+-->
     <!--string name="pref_default_host_address">10.80.63.236</string-->
     <!--<string name="pref_default_host_address">10.126.0.229</string>-->
 
-    <!--string name="pref_default_host_address">52.24.232.162</string-->
+    <string name="pref_default_host_address">52.24.232.162</string>
     <string name="pref_summary_host_address">El nombre del host o la dirección IP del servidor de streaming.</string>
 
     <!-- Puerto del servidor-->
@@ -111,7 +113,9 @@
     <!-- Usuario para la autenticación en el servidor-->
     <string name="pref_title_username">Nombre de usuario</string>
     <string name="pref_default_username">tippi</string>
-    <!--string name="pref_default_username">titanlive</string-->
+<!--
+    <string name="pref_default_username">titanlive</string>
+-->
     <string name="pref_summary_username">El usuario para la autenticación.</string>
     <string name="key_username">username</string>
 
@@ -119,8 +123,8 @@
     <string name="key_password">password</string>
     <string name="pref_title_password">Contraseña</string>
     <string name="pref_summary_password">La contraseña para la autenticación.</string>
-    <string name="pref_default_password">Tpp1L1v3</string>
-    <!--string name="pref_default_password">T1t4nL1v3</string-->
+    <!--<string name="pref_default_password">Tpp1L1v3</string>-->
+    <string name="pref_default_password">Tpp1L1ve</string>
 
     <!-- TODO: Strings preferences local video-->
     <!-- Keys preferences video local -->

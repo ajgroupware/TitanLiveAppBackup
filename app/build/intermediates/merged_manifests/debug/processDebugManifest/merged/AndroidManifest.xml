@@ -25,6 +25,8 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.USB_PERMISSION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
 
     <uses-feature
         android:name="android.hardware.camera"
@@ -111,6 +113,18 @@
         <service
             android:name="com.bpt.tipi.streaming.service.RecorderService"
             android:enabled="true" />
+
+        <receiver android:name="com.bpt.tipi.streaming.receiver.events.SimChangeReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.SIM_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.bpt.tipi.streaming.receiver.events.ShutdownReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+                <action android:name="android.intent.action.QUICKBOOT_POWEROFF" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

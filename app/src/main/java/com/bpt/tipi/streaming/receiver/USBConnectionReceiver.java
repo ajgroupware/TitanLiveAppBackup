@@ -23,7 +23,7 @@ public class USBConnectionReceiver extends BroadcastReceiver {
     public void onReceive(final Context context, final Intent intent) {
         if (firstConnect) {
             firstConnect = false;
-            new CountDownTimer(1000, 1000) {
+            new CountDownTimer(10000, 10000) {
                 public void onTick(long millisUntilFinished) {
                 }
 
@@ -32,13 +32,13 @@ public class USBConnectionReceiver extends BroadcastReceiver {
                     if (action.equalsIgnoreCase(usbStateChangeAction)) { //Check if change in USB state
                         if (intent.getExtras().getBoolean("connected")) {
                             // USB was connected
-                            bus.post(new MessageEvent(MessageEvent.FINISH_SERVICES));
+                            //bus.post(new MessageEvent(MessageEvent.FINISH_SERVICES));
                             ServiceHelper.stopAllServices(context);
                             IrHelper.setIrState(IrHelper.STATE_OFF);
                         } else {
                             // USB was disconnected
                             ServiceHelper.startAllServices(context);
-                            bus.post(new MessageEvent(MessageEvent.START_SERVICES));
+                            //bus.post(new MessageEvent(MessageEvent.START_SERVICES));
                         }
                     }
                     firstConnect = true;

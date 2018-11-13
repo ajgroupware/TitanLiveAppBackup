@@ -238,6 +238,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     unbindService(conCameraService);
                     mBound = false;
                 }
+                break;
             case MessageEvent.START_SERVICES:
                 bindService();
                 break;

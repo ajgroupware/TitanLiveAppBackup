@@ -238,6 +238,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     unbindService(conCameraService);
                     mBound = false;
                 }
+                break;
             case MessageEvent.START_SERVICES:
                 bindService();
                 break;
@@ -459,12 +460,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             e.printStackTrace();
         }
         List<Label> labels = database.getLabels();
+        List<String> ids = new ArrayList<>();
         if(labels.size()== 0){
             String[] defaultLabels = getResources().getStringArray(R.array.labels_tagging);
+            String[] defaultLabelIds = getResources().getStringArray(R.array.ids_tagging);
 
+            for(String id: defaultLabelIds){
+                ids.add(id);
+            }
+
+            int id= 0;
             for (String label : defaultLabels) {
-                Label lb = new Label(0, label);
+                Label lb = new Label(Integer.valueOf(ids.get(id)), label);
                 labels.add(lb);
+                id++;
             }
         }
         database.close();

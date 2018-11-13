@@ -1,0 +1,13 @@
+
+rsquid:S1192"QDefine a constant instead of duplicating this literal "application/json" 3 times.(ŠÑ‚äıÿÿÿÿ8ø¾ŞÓï,
+fsquid:CallToDeprecatedMethod"4Remove this use of "StringEntity"; it is deprecated.(ß´ôƒúÿÿÿÿ8ø¾ŞÓï,
+lsquid:S1192"KDefine a constant instead of duplicating this literal "Depuracion" 5 times.(”¶“ùÿÿÿÿ8ø¾ŞÓï,
+[squid:CallToDeprecatedMethod".Remove this use of "Header"; it is deprecated.(‘ËÙï8ø¾ŞÓï,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÌêŒ–8ø¾ŞÓï,
+fsquid:CallToDeprecatedMethod"4Remove this use of "StringEntity"; it is deprecated.(¬Ä¼òüÿÿÿÿ8ø¾ŞÓï,
+U"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(¼ãúÿ8ø¾ŞÓï,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ë–Íå8ø¾ŞÓï,
+`squid:CallToDeprecatedMethod".Remove this use of "Header"; it is deprecated.(ğĞ—öúÿÿÿÿ8ø¾ŞÓï,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ø¾ŞÓï,
+[squid:CallToDeprecatedMethod".Remove this use of "Header"; it is deprecated.(Ã´­ê8ø¾ŞÓï,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¢Å°¨úÿÿÿÿ8ø¾ŞÓï,

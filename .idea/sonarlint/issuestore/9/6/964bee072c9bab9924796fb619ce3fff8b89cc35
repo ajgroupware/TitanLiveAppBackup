@@ -1,0 +1,24 @@
+
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(µ¶¸õşÿÿÿÿ8åÓÇÍï,
+Z"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(×“¾ñùÿÿÿÿ8åÓÇÍï,
+Gsquid:S1659"+Declare "tvTimeElapsed" on a separate line.(¡†­Ö8åÓÇÍï,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ñşœÇıÿÿÿÿ8åÓÇÍï,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¡Õ±š8åÓÇÍï,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ê˜š›ÿÿÿÿÿ8åÓÇÍï,
+_squid:S1155">Use isEmpty() to check whether the collection is empty or not.(ä·ƒáüÿÿÿÿ8åÓÇÍï,
+jsquid:MaximumInheritanceDepth"<This class has 7 parents which is greater than 5 authorized.(×›¡à8åÓÇÍï,
+[squid:UselessImportCheck"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8åÓÇÍï,
+_squid:S1155">Use isEmpty() to check whether the collection is empty or not.(ñÎí†ıÿÿÿÿ8åÓÇÍï,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8åÓÇÍï,
+U"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(ÑË“8åÓÇÍï,
+_squid:S1155">Use isEmpty() to check whether the collection is empty or not.(¸õÉÙûÿÿÿÿ8åÓÇÍï,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8åÓÇÍï,
+¢squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(œƒƒ©ùÿÿÿÿ8åÓÇÍï,
+_squid:S1155">Use isEmpty() to check whether the collection is empty or not.(ñÎí†ıÿÿÿÿ8åÓÇÍï,
+U"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(ãØ´ú8ğÇÍï,
+isquid:S1192"HDefine a constant instead of duplicating this literal "isLogin" 3 times.(‘Æè©ÿÿÿÿÿ8ğÇÍï,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(°÷œŒşÿÿÿÿ8ğÇÍï,
+ssquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(üüÊºøÿÿÿÿ8ğÇÍï,
+¢squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(½íµ”úÿÿÿÿ8ğÇÍï,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ğÇÍï,
+_squid:S1155">Use isEmpty() to check whether the collection is empty or not.(¸õÉÙûÿÿÿÿ8ğÇÍï,

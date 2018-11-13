@@ -9,8 +9,11 @@ import android.widget.Toast;
 import com.bpt.tipi.streaming.ServiceHelper;
 import com.bpt.tipi.streaming.helper.IrHelper;
 import com.bpt.tipi.streaming.model.MessageEvent;
+import com.bumptech.glide.util.Util;
 
 import org.greenrobot.eventbus.EventBus;
+
+import javax.xml.datatype.Duration;
 
 public class USBConnectionReceiver extends BroadcastReceiver {
 
@@ -32,13 +35,13 @@ public class USBConnectionReceiver extends BroadcastReceiver {
                     if (action.equalsIgnoreCase(usbStateChangeAction)) { //Check if change in USB state
                         if (intent.getExtras().getBoolean("connected")) {
                             // USB was connected
-                            bus.post(new MessageEvent(MessageEvent.FINISH_SERVICES));
+                            //bus.post(new MessageEvent(MessageEvent.FINISH_SERVICES));
                             ServiceHelper.stopAllServices(context);
                             IrHelper.setIrState(IrHelper.STATE_OFF);
                         } else {
                             // USB was disconnected
                             ServiceHelper.startAllServices(context);
-                            bus.post(new MessageEvent(MessageEvent.START_SERVICES));
+                            //bus.post(new MessageEvent(MessageEvent.START_SERVICES));
                         }
                     }
                     firstConnect = true;

@@ -1,0 +1,82 @@
+
+’"squid:ClassVariableVisibilityCheck"`Make isStreamingRecording a static final constant or non-public and provide accessors if needed.(ÿ¯Ù8îàçÆï,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(áíüÈùÿÿÿÿ8îàçÆï,
+Ssquid:S2589"7Remove this expression which always evaluates to "true"(¢Úäü8üôíÆï,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(áíüÈùÿÿÿÿ8îàçÆï,
+ssquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(ûÝæèþÿÿÿÿ8îàçÆï,
+psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Éÿ³Íúÿÿÿÿ8îàçÆï,
+psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œ‹…Ôÿÿÿÿÿ8îàçÆï,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8îàçÆï,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8îàçÆï,
+”"squid:ClassVariableVisibilityCheck"\Make isLocalRecording a static final constant or non-public and provide accessors if needed.(ú¨àÊÿÿÿÿÿ8îàçÆï,
+nsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(›ÅÈÛ8îàçÆï,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8îàçÆï,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8îàçÆï,
+psquid:S1192"TDefine a constant instead of duplicating this literal "yyyy-MM-dd HH:mm:ss" 3 times.(êß±ï8îàçÆï,
+jsquid:S4042"IUse "java.nio.Files#delete" here for better messages on error conditions.(²Œ­ûÿÿÿÿ8îàçÆï,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ý®´Ûüÿÿÿÿ8îàçÆï,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8îàçÆï,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8üôíÆï,
+Ysquid:S1197"8Move the array designator from the variable to the type.(ìÏÈ¿þÿÿÿÿ8îàçÆï,
+ssquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(¼µû‰ûÿÿÿÿ8îàçÆï,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ý®´Ûüÿÿÿÿ8îàçÆï,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8üôíÆï,
+jsquid:S4042"IUse "java.nio.Files#delete" here for better messages on error conditions.(²Œ­ûÿÿÿÿ8îàçÆï,
+[
+squid:S899";Do something with the "boolean" value returned by "delete".(²Œ­ûÿÿÿÿ8îàçÆï,
+Jsquid:S1066"/Merge this if statement with the enclosing one.(¼¨Ú8üôíÆï,
+Xsquid:S2589"7Remove this expression which always evaluates to "true"(¯Ù˜Ïÿÿÿÿÿ8üôíÆï,
+csquid:S1192"GDefine a constant instead of duplicating this literal "TITAN-" 3 times.(áËæÌ8îàçÆï,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8îàçÆï,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8îàçÆï,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ŒÒÞÔ8îàçÆï,
+‹"squid:ClassVariableVisibilityCheck"SMake context a static final constant or non-public and provide accessors if needed.(±¹ï±úÿÿÿÿ8îàçÆï,
+ksquid:UnusedPrivateMethod"<Remove this unused private "stopLocalMediaRecorder_" method.(œ‹…Ôÿÿÿÿÿ8îàçÆï,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ïÂ ’8îàçÆï,
+vsquid:S1192"UDefine a constant instead of duplicating this literal "Open camera failed: " 3 times.(€­³ýÿÿÿÿ8îàçÆï,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8îàçÆï,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8üôíÆï,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(áíüÈùÿÿÿÿ8îàçÆï,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8îàçÆï,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8îàçÆï,
+fsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(·žÏO8îàçÆï,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÝžÎ”ùÿÿÿÿ8îàçÆï,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8îàçÆï,
+[
+squid:S899";Do something with the "boolean" value returned by "delete".(²Œ­ûÿÿÿÿ8îàçÆï,
+Ysquid:S1197"8Move the array designator from the variable to the type.(À–þÜÿÿÿÿÿ8ì±ÆÆï,
+‰"squid:ClassVariableVisibilityCheck"QMake isSos a static final constant or non-public and provide accessors if needed.(´±œÎúÿÿÿÿ8îàçÆï,
+{squid:S1192"_Define a constant instead of duplicating this literal "Get camera from service failed" 3 times.(‘º§Ë8îàçÆï,
+nsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(ò´§ê8îàçÆï,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8îàçÆï,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8îàçÆï,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ö¾ö¯8îàçÆï,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8îàçÆï,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(°éžäúÿÿÿÿ8îàçÆï,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8îàçÆï,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ô€æ8îàçÆï,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(°éžäúÿÿÿÿ8îàçÆï,
+Ksquid:S1066"/Merge this if statement with the enclosing one.(­Êöè8üôíÆï,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8îàçÆï,
+squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(îñë‡8üôíÆï,
+squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(îñë‡8üôíÆï,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(š©¨Ñýÿÿÿÿ8îàçÆï,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8îàçÆï,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ö¾ö¯8îàçÆï,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8üôíÆï,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ŒÒÞÔ8îàçÆï,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8îàçÆï,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(³Á€ø8îàçÆï,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8îàçÆï,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8üôíÆï,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(°éžäúÿÿÿÿ8îàçÆï,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÿ¬î8îàçÆï,
+psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±Á«¬øÿÿÿÿ8îàçÆï,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(°éžäúÿÿÿÿ8îàçÆï,
+•squid:S1192"tDefine a constant instead of duplicating this literal "There is no device, not possible to start recording" 3 times.(ªÑý±ÿÿÿÿÿ8îàçÆï,
+lsquid:S1301"KReplace this "switch" statement by "if" statements to increase readability.(²‹›Øüÿÿÿÿ8üôíÆï,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¯Íêè8ˆÚíÆï,
+U"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(ÑË“8îàçÆï,
+Vsquid:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8îàçÆï,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ý®´Ûüÿÿÿÿ8îàçÆï,
+Vsquid:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8îàçÆï,

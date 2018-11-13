@@ -1,0 +1,12 @@
+
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8§¨ßÓï,
+U"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(ÑË“8§¨ßÓï,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ª¯Úì8§¨ßÓï,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8§¨ßÓï,
+gsquid:S1301"KReplace this "switch" statement by "if" statements to increase readability.(ÑË“8§¨ßÓï,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(”Ç¢ñ8ıÊßÓï,
+squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(îñë‡8§¨ßÓï,
+zsquid:UselessImportCheck"QRemove this unused import 'org.eclipse.paho.client.mqttv3.MqttClientPersistence'.(éöÛÂ8§¨ßÓï,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8§¨ßÓï,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ôñÙü8ÛªáÓï,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(àŸ½¨8ÛªáÓï,

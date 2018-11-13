@@ -26,13 +26,17 @@ import com.bpt.tipi.streaming.ConfigHelper;
 import com.bpt.tipi.streaming.StateMachineHandler;
 import com.bpt.tipi.streaming.UnCaughtException;
 import com.bpt.tipi.streaming.Utils;
+import com.bpt.tipi.streaming.helper.CameraHelper;
 import com.bpt.tipi.streaming.helper.CameraRecorderHelper;
 import com.bpt.tipi.streaming.helper.IrHelper;
 import com.bpt.tipi.streaming.helper.VideoNameHelper;
 import com.bpt.tipi.streaming.model.MessageEvent;
 
+import org.bytedeco.javacpp.avutil;
+import org.bytedeco.javacv.FFmpegFrameFilter;
 import org.bytedeco.javacv.FFmpegFrameRecorder;
 import org.bytedeco.javacv.Frame;
+import org.bytedeco.javacv.FrameFilter;
 import org.bytedeco.javacv.FrameRecorder;
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -84,6 +88,7 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
     /* Variables de streaming */
     private FFmpegFrameRecorder streamingRecorder;
     private Frame streamingYuvImage = null;
+    private FFmpegFrameFilter streamingFilter;
 
     private AudioRecord streamingAudioRecord;
     private StreamingAudioRecordRunnable streamingAudioRecordRunnable;
@@ -630,6 +635,9 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
                 CameraRecorderHelper.getStreamingImageHeight(context), Frame.DEPTH_UBYTE, 2);
         streamingRecorder = CameraRecorderHelper.initRecorder(context, CameraRecorderHelper.RECORDER_TYPE_STREAMING,
                 CameraRecorderHelper.buildStreamEndpoint(context), CameraRecorderHelper.FORMAT_FLV);
+        String filterString = "transpose=dir=1:passthrough=portrait";
+        streamingFilter = new FFmpegFrameFilter(filterString, CameraHelper.getStreamingImageWidth(context), CameraHelper.getStreamingImageHeight(context));
+        streamingFilter.setPixelFormat(avutil.AV_PIX_FMT_NV21);
         streamingAudioRecordRunnable = new StreamingAudioRecordRunnable();
         streamingAudioThread = new Thread(streamingAudioRecordRunnable);
         streamingRunAudioThread = true;
@@ -845,11 +853,12 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
         configStreamingRecorder();
         try {
             streamingRecorder.start();
+            streamingFilter.start();
             streamingStartTime = System.currentTimeMillis();
             isStreamingRecording = true;
             proccesingStreming = false;
             streamingAudioThread.start();
-        } catch (FrameRecorder.Exception e) {
+        } catch (FrameRecorder.Exception | FrameFilter.Exception e) {
             e.printStackTrace();
             MessageEvent event = new MessageEvent(MessageEvent.STOP_STREAMING);
             bus.post(event);
@@ -902,11 +911,14 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
             try {
                 streamingRecorder.stop();
                 streamingRecorder.release();
-            } catch (FrameRecorder.Exception e) {
+                streamingFilter.stop();
+                streamingFilter.release();
+            } catch (FrameRecorder.Exception | FrameFilter.Exception e) {
                 e.printStackTrace();
             }
             streamingRecorder = null;
             streamingYuvImage = null;
+            streamingFilter = null;
         }
         if (ConfigHelper.getStreamingVibrateAndSound(context)) {
             CameraRecorderHelper.soundStop(context);
@@ -1002,9 +1014,14 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
                     streamingRecorder.setTimestamp(t);
                 }
                 synchronized (this) {
-                    streamingRecorder.record(streamingYuvImage);
+                    //streamingRecorder.record(streamingYuvImage);
+                    streamingFilter.push(streamingYuvImage);
+                    Frame frame2;
+                    while ((frame2 = streamingFilter.pull()) != null) {
+                        streamingRecorder.record(frame2, streamingFilter.getPixelFormat());
+                    }
                 }
-            } catch (FFmpegFrameRecorder.Exception e) {
+            } catch (FFmpegFrameRecorder.Exception | FrameFilter.Exception e) {
                 Log.v(TAG, e.getMessage());
                 e.printStackTrace();
                 MessageEvent event = new MessageEvent(MessageEvent.STOP_STREAMING);

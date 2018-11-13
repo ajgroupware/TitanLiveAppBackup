@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
+import android.widget.Toast;
 
 import com.bpt.tipi.streaming.mqtt.MqttService;
 import com.bpt.tipi.streaming.service.LocationService;

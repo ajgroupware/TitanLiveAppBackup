@@ -504,11 +504,6 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
                     if (camera != null) {
                         camera.addCallbackBuffer(buffer);
                     }
-                    if (takePhoto) {
-                        takePhoto = false;
-                        savePhoto(bytes);
-                        machineHandler.sendEmptyMessage(StateMachineHandler.TAKE_PHOTO);
-                    }
                 }
             });
 
@@ -609,7 +604,7 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
 
                     if (takePhoto) {
                         takePhoto = false;
-                        savePhoto(bytes);
+                        savePhoto(b);
                         machineHandler.sendEmptyMessage(StateMachineHandler.TAKE_PHOTO);
                     }
                 }
@@ -634,14 +629,10 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
     }
 
     public void initPhotoCamera(){
-        //takePhoto = true;
-        //initCamera();
-        /*if (!isStreamingRecording) {
-            prepareStreamingCamera();//Abrir cámara 0 antes de la 1
+        //inicia la camara principal para tomar la foto
+        if(!isLocalRecording) {
+            initMainCamera();
         }
-        initPrimaryCamera();
-        configLocalRecorder();*/
-        initMainCamera();
     }
 
     public void initCamera_(final boolean localConfig) {
@@ -715,6 +706,24 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
         }
 //            }
 //        });
+    }
+
+    public void finishMainCamera() {
+        if (!isStreamingRecording && !streamingRunAudioThread && !isSos && !isLocalRecording) {
+            try {
+                if (camera != null) {
+                    camera.stopPreview();
+                    camera.setPreviewCallback(null);
+                    camera.lock();
+                    camera.release();
+                    camera = null;
+                }
+                //IrHelper.setIrState(IrHelper.STATE_OFF);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
     }
 
     public void finishCamera() {
@@ -1113,7 +1122,7 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
                     file);
             CameraRecorderHelper.soundTakePhoto(context);
         } catch (FileNotFoundException e) {
-
+            e.printStackTrace();
         }
         finally {
             try {

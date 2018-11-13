@@ -16,7 +16,7 @@ public class StateMachineActionHandler {
                     //recorderService.initPrimaryCamera();
                     break;
                 case CAMERA_STOP:
-                    recorderService.finishCamera();
+                    recorderService.finishMainCamera();
                     break;
                 case LR_START:
                     recorderService.initLocalVideoCounter();

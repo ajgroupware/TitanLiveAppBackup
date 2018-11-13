@@ -125,7 +125,10 @@ public class StateMachineHandler extends Handler {
                         state = StateMachine.INIT;
                         StateMachineActionHandler.manageState(recorderService, StateAction.CAMERA_STOP);
                         break;
-                    case ST:
+                    case LR:
+                        StateMachineActionHandler.manageState(recorderService, StateAction.TAKE_PHOTO);
+                        break;
+                    /*case ST:
                         state = StateMachine.ST_PH;
                         StateMachineActionHandler.manageState(recorderService, StateAction.TAKE_PHOTO);
                         break;
@@ -145,7 +148,7 @@ public class StateMachineHandler extends Handler {
                         break;
                     case LR_PH:
                         state = StateMachine.LR;
-                        break;
+                        break;*/
                 }
                 break;
         }

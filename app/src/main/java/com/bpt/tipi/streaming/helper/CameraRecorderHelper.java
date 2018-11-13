@@ -56,7 +56,7 @@ public class CameraRecorderHelper {
     public static void putWaterMark(Mat mat, String text, String text2) {
 
         //Calculate size of new matrix
-        double radians = Math.toRadians(270);
+        /*double radians = Math.toRadians(270);
         double sin = Math.abs(Math.sin(radians));
         double cos = Math.abs(Math.cos(radians));
 
@@ -68,40 +68,40 @@ public class CameraRecorderHelper {
 
 
         //Creating the transformation matrix M
-        Mat rotationMatrix = Imgproc.getRotationMatrix2D(center, 270, 1);
+        Mat rotationMatrix = Imgproc.getRotationMatrix2D(center, 270, 1);*/
         switch (mat.rows()) {
             case 240:
-                Imgproc.warpAffine(mat, mat,rotationMatrix, mat.size());
+                //Imgproc.warpAffine(mat, mat,rotationMatrix, mat.size());
                 Imgproc.putText(mat, text, new Point(2, 10), Core.FONT_HERSHEY_COMPLEX_SMALL, 0.45, TEXT_COLOR);
                 Imgproc.putText(mat, text2, new Point(2, 115), Core.FONT_HERSHEY_COMPLEX_SMALL, 0.45, TEXT_COLOR);
                 break;
             case 288:
-                Imgproc.warpAffine(mat, mat,rotationMatrix, mat.size());
+                //Imgproc.warpAffine(mat, mat,rotationMatrix, mat.size());
                 Imgproc.putText(mat, text, new Point(2, 10), Core.FONT_HERSHEY_COMPLEX_SMALL, 0.45, TEXT_COLOR);
                 Imgproc.putText(mat, text2, new Point(2, 140), Core.FONT_HERSHEY_COMPLEX_SMALL, 0.45, TEXT_COLOR);
                 break;
             case 320:
-                Imgproc.warpAffine(mat, mat,rotationMatrix, mat.size());
+                //Imgproc.warpAffine(mat, mat,rotationMatrix, mat.size());
                 Imgproc.putText(mat, text, new Point(2, 10), Core.FONT_HERSHEY_COMPLEX_SMALL, 0.45, TEXT_COLOR);
                 Imgproc.putText(mat, text2, new Point(2, 150), Core.FONT_HERSHEY_COMPLEX_SMALL, 0.45, TEXT_COLOR);
                 break;
             case 480:
-                Imgproc.warpAffine(mat, mat,rotationMatrix, mat.size());
+                //Imgproc.warpAffine(mat, mat,rotationMatrix, mat.size());
                 Imgproc.putText(mat, text, new Point(2, 20), Core.FONT_HERSHEY_COMPLEX_SMALL, 0.7, TEXT_COLOR);
                 Imgproc.putText(mat, text2, new Point(2, 230), Core.FONT_HERSHEY_COMPLEX_SMALL, 0.7, TEXT_COLOR);
                 break;
             case 600:
-                Imgproc.warpAffine(mat, mat,rotationMatrix, mat.size());
+                //Imgproc.warpAffine(mat, mat,rotationMatrix, mat.size());
                 Imgproc.putText(mat, text, new Point(2, 20), Core.FONT_HERSHEY_COMPLEX_SMALL, 1, TEXT_COLOR);
                 Imgproc.putText(mat, text2, new Point(2, 290), Core.FONT_HERSHEY_COMPLEX_SMALL, 1, TEXT_COLOR);
                 break;
             case 720:
-                Imgproc.warpAffine(mat, mat,rotationMatrix, mat.size());
+                //Imgproc.warpAffine(mat, mat,rotationMatrix, mat.size());
                 Imgproc.putText(mat, text, new Point(2, 20), Core.FONT_HERSHEY_COMPLEX_SMALL, 1, TEXT_COLOR);
                 Imgproc.putText(mat, text2, new Point(2, 340), Core.FONT_HERSHEY_COMPLEX_SMALL, 1, TEXT_COLOR);
                 break;
             case 1080:
-                Imgproc.warpAffine(mat, mat,rotationMatrix, mat.size());
+                //Imgproc.warpAffine(mat, mat,rotationMatrix, mat.size());
                 Imgproc.putText(mat, text, new Point(2, 30), Core.FONT_HERSHEY_COMPLEX_SMALL, 1.5, TEXT_COLOR);
                 Imgproc.putText(mat, text2, new Point(2, 500), Core.FONT_HERSHEY_COMPLEX_SMALL, 1.5, TEXT_COLOR);
                 break;

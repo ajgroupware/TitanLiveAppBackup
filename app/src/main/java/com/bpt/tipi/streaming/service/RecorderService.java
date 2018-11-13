@@ -318,6 +318,113 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
         }
     }
 
+    public void initMainCamera() {
+//        mHandler.post(new Runnable() {
+//            @Override
+//            public void run() {
+        //finishCamera();
+        if (!Utils.isCameraExist(context)) {
+            throw new IllegalStateException("There is no device, not possible to start recording");
+        }
+        deviceId = ConfigHelper.getDeviceName(context);
+        if (camera == null) {
+            //camera = Utils.getCameraInstance(Camera.CameraInfo.CAMERA_FACING_BACK);
+
+            try {
+                camera = Camera.open(Camera.CameraInfo.CAMERA_FACING_FRONT);
+            } catch (Exception e) {
+                Log.d("TAG", "Open camera failed: " + e);
+            }
+        }
+        if (camera != null) {
+            //camera.setDisplayOrientation(270);
+            Camera.Parameters parameters = camera.getParameters();
+
+            parameters.setPreviewSize(CameraRecorderHelper.getStreamingImageWidth(context), CameraRecorderHelper.getStreamingImageHeight(context));
+            parameters.setPreviewFrameRate(ConfigHelper.getStreamingFramerate(context));
+            //parameters.setRotation(270);
+            parameters.setPreviewFormat(ImageFormat.NV21);
+            camera.setParameters(parameters);
+            //camera.setDisplayOrientation(270);
+
+            int height = parameters.getPreviewSize().height;
+            switch (height) {
+                case 480:
+                    profile = CamcorderProfile.get(CamcorderProfile.QUALITY_480P);
+                    break;
+                case 720:
+                    profile = CamcorderProfile.get(CamcorderProfile.QUALITY_720P);
+                    break;
+                case 1080:
+                    profile = CamcorderProfile.get(CamcorderProfile.QUALITY_1080P);
+                    break;
+                default:
+                    profile = CamcorderProfile.get(CamcorderProfile.QUALITY_480P);
+                    break;
+            }
+            profile.videoFrameRate = parameters.getPreviewFrameRate();
+            profile.videoFrameWidth = parameters.getPreviewSize().width;
+            profile.videoFrameHeight = parameters.getPreviewSize().height;
+
+            int size = CameraRecorderHelper.getStreamingImageWidth(context) * CameraRecorderHelper.getStreamingImageHeight(context);
+
+            size = size * ImageFormat.getBitsPerPixel(parameters.getPreviewFormat()) / 8;
+            buffer = new byte[size];
+            camera.addCallbackBuffer(buffer);
+            camera.setPreviewCallbackWithBuffer(new Camera.PreviewCallback() {
+                @Override
+                public void onPreviewFrame(byte[] bytes, Camera mCamera) {
+                    Camera.Parameters parameters = camera.getParameters();
+
+                    Mat mat = new Mat(parameters.getPreviewSize().height, parameters.getPreviewSize().width, CvType.CV_8UC2);
+                    mat.put(0, 0, bytes);
+
+                    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+                    String currentDate = sdf.format(new Date());
+                    CameraRecorderHelper.putWaterMark(mat, currentDate, "TITAN-" + deviceId);
+
+
+
+                    int bufferSize = (int) (mat.total() * mat.elemSize());
+                    byte[] b = new byte[bufferSize];
+
+                    mat.get(0, 0, b);
+
+                    if (isStreamingRecording) {
+                        streamingRecord(b);
+                    }
+
+                    if (camera != null) {
+                        camera.addCallbackBuffer(buffer);
+                    }
+                    if (takePhoto) {
+                        takePhoto = false;
+                        savePhoto(b);
+                        machineHandler.sendEmptyMessage(StateMachineHandler.TAKE_PHOTO);
+                    }
+                }
+            });
+
+            try {
+                camera.setPreviewTexture(new SurfaceTexture(10));
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            try {
+                camera.startPreview();
+            } catch (Exception e) {
+                e.printStackTrace();
+                //finishCamera();
+            }
+            //IrHelper.setIrState(IrHelper.STATE_ON);
+        } else {
+            Log.d(TAG, "Get camera from service failed");
+        }
+//            }
+//        });
+    }
+
     public void initCamera() {
 //        mHandler.post(new Runnable() {
 //            @Override
@@ -529,10 +636,12 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
     public void initPhotoCamera(){
         //takePhoto = true;
         //initCamera();
-        if (!isStreamingRecording) {
+        /*if (!isStreamingRecording) {
             prepareStreamingCamera();//Abrir cámara 0 antes de la 1
         }
         initPrimaryCamera();
+        configLocalRecorder();*/
+        initMainCamera();
     }
 
     public void initCamera_(final boolean localConfig) {

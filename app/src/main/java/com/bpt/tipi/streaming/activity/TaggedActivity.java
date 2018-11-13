@@ -96,6 +96,18 @@ public class TaggedActivity extends AppCompatActivity implements View.OnClickLis
             }
         } else {
             String[] defaultLabels = getResources().getStringArray(R.array.labels_tagging);
+            String[] defaultLabelIds = getResources().getStringArray(R.array.ids_tagging);
+            List<String> ids = new ArrayList<>();
+            for(String id: defaultLabelIds){
+                ids.add(id);
+            }
+
+            int id= 0;
+            for (String label : defaultLabels) {
+                Label lb = new Label(Integer.valueOf(ids.get(id)), label);
+                labels.add(lb);
+                id++;
+            }
             adapter = new ArrayAdapter<>(
                     TaggedActivity.this, android.R.layout.simple_spinner_item,
                     defaultLabels);

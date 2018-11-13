@@ -17,6 +17,7 @@ anim design_snackbar_in
 anim design_snackbar_out
 animator design_appbar_state_list_animator
 array entries_spinner
+array ids_tagging
 array labels_tagging
 array local_video_sizes
 array pref_local_video_bitrates

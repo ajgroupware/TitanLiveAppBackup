@@ -447,4 +447,25 @@
         <item>Riña</item>
         <item>Violación carnal</item>
     </string-array>
+
+    <string-array name="ids_tagging">
+        <item>0</item>
+        <item>88</item>
+        <item>90</item>
+        <item>47</item>
+        <item>13</item>
+        <item>91</item>
+        <item>58</item>
+        <item>18</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>68</item>
+        <item>70</item>
+        <item>29</item>
+        <item>104</item>
+        <item>105</item>
+        <item>84</item>
+        <item>43</item>
+    </string-array>
 </resources>

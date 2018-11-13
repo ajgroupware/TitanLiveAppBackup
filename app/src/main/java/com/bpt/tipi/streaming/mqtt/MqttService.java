@@ -7,6 +7,7 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.IBinder;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.bpt.tipi.streaming.ConfigHelper;
 import com.bpt.tipi.streaming.UnCaughtException;
@@ -25,8 +26,8 @@ import org.greenrobot.eventbus.ThreadMode;
 public class MqttService extends Service {
 
     //private static final String URL = "tcp://10.50.4.3:1883"; //Tigo Avantel
-    private static final String URL = "tcp://35.165.11.242:1883";
-    //private static final String URL = "tcp://54.218.193.119:1883";
+    //private static final String URL = "tcp://35.165.11.242:1883";
+    private static final String URL = "tcp://54.218.193.119:1883";
     //private static final String URL = "tcp://10.80.63.236:1883"; //Movistar
     //private static final String URL = "tcp://10.126.0.229:1883";
 
@@ -46,18 +47,28 @@ public class MqttService extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
-        Thread.setDefaultUncaughtExceptionHandler(new UnCaughtException(this));
-        HandlerThread thread = new HandlerThread(MQTT_THREAD_NAME);
-        thread.start();
-        mConnHandler = new Handler(thread.getLooper());
+        try {
+            Thread.setDefaultUncaughtExceptionHandler(new UnCaughtException(this));
+            HandlerThread thread = new HandlerThread(MQTT_THREAD_NAME);
+            thread.start();
+            mConnHandler = new Handler(thread.getLooper());
+        } catch (Exception e) {
+            Toast.makeText(getBaseContext(), ".:Error createMqttService:.", Toast.LENGTH_SHORT).show();
+        }
+
     }
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        bus.register(this);
-        connect();
-        counterConnection = new CounterConnection(30000, 1000);
-        counterConnection.start();
+        try {
+            bus.register(this);
+            connect();
+            counterConnection = new CounterConnection(30000, 1000);
+            counterConnection.start();
+        } catch (Exception e) {
+            Toast.makeText(getBaseContext(), ".:Error startMqttService:.", Toast.LENGTH_SHORT).show();
+        }
+
         return START_STICKY;
     }
 
@@ -88,16 +99,17 @@ public class MqttService extends Service {
                     try {
                         String idDevice = ConfigHelper.getDeviceName(MqttService.this);
                         mqttClient = new MqttClient(URL, idDevice, new MemoryPersistence());
+                        mqttClient.setTimeToWait(8000); //8 seg
                         mqttClient.setCallback(new MqttCallbackHandler(MqttService.this));
 
                         MqttConnectOptions options = new MqttConnectOptions();
                         options.setCleanSession(false);
                         //options.setUserName("tipi");
-                        options.setUserName("mqadmin");
+                        //options.setUserName("mqadmin");
                         //options.setPassword("Br0k3rM4gmnt".toCharArray());
-                        //options.setUserName("titanlive");
-                        //options.setPassword("T1t4nL1v3".toCharArray());
-                        options.setPassword("Br0k3rM4gmnt".toCharArray());
+                        options.setUserName("titanlive");
+                        options.setPassword("T1t4nL1v3".toCharArray());
+                        //options.setPassword("Br0k3rM4gmnt".toCharArray());
                         IMqttToken conToken = mqttClient.connectWithResult(options);
                         conToken.waitForCompletion();
 

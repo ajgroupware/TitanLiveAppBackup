@@ -390,9 +390,9 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
 
                     mat.get(0, 0, b);
 
-                    if (isStreamingRecording) {
+                    /*if (isStreamingRecording) {
                         streamingRecord(b);
-                    }
+                    }*/
 
                     if (camera != null) {
                         camera.addCallbackBuffer(buffer);

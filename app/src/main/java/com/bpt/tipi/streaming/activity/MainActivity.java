@@ -283,6 +283,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void initServices() {
+        ServiceHelper.startCheckPeriodicalService(MainActivity.this);
         ServiceHelper.startRecorderService(MainActivity.this);
         ServiceHelper.startMqttService(MainActivity.this);
         ServiceHelper.startLocationService(MainActivity.this);

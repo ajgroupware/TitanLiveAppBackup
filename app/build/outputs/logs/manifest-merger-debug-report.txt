@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:2:1-125:12
-INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:2:1-125:12
-INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:2:1-125:12
-INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:2:1-125:12
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:2:1-127:12
+INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:2:1-127:12
+INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:2:1-127:12
+INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:2:1-127:12
 MERGED from [:libraries:opencv] C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\libraries\opencv\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:design:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\design-27.1.0.aar\29ecb96d86b31723a4ec174fba9257e2\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\3b57308a70e6df85040af814c2bbbaf8\AndroidManifest.xml:17:1-22:12
@@ -23,22 +23,22 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\juanc\.gradle\
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\d3f995849a29edc073add36fad31f066\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\5abbe56dcb1fa07827c9d5576055e4a5\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\18caad9d90dc7c61fcd51f88c39937e3\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:2:1-125:12
-INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:2:1-125:12
-INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:2:1-125:12
+INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:2:1-127:12
+INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:2:1-127:12
+INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:2:1-127:12
 	package
 		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:4:5-37
 		INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:2:1-125:12
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:2:1-127:12
 		INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:2:1-125:12
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:2:1-127:12
 		INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:2:11-69
@@ -129,7 +129,7 @@ ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app
 	android:name
 		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:30:19-67
 application
-ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:32:5-123:19
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:32:5-125:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\4a4c1cb8cc87f4706e5b9cfd29db3b1a\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\juanc\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\4a4c1cb8cc87f4706e5b9cfd29db3b1a\AndroidManifest.xml:9:5-20
 	android:supportsRtl
@@ -291,19 +291,23 @@ ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app
 	android:name
 		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:113:25-79
 receiver#com.bpt.tipi.streaming.receiver.events.ShutdownReceiver
-ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:116:9-122:20
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:116:9-121:20
 	android:name
-		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:117:13-61
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:116:19-67
 intent-filter#action:name:android.intent.action.ACTION_SHUTDOWN+action:name:android.intent.action.QUICKBOOT_POWEROFF
-ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:118:13-121:29
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:117:13-120:29
 action#android.intent.action.ACTION_SHUTDOWN
-ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:119:17-79
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:118:17-80
 	android:name
-		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:119:25-77
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:118:25-77
 action#android.intent.action.QUICKBOOT_POWEROFF
-ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:120:17-82
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:119:17-83
 	android:name
-		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:120:25-80
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:119:25-80
+service#com.bpt.tipi.streaming.service.CheckPeriodicalService
+ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:123:9-124:70
+	android:name
+		ADDED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml:124:13-59
 uses-sdk
 INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\juanc\Desktop\groupware\TIPI\titan\from git\TitanLiveApp\app\src\main\AndroidManifest.xml

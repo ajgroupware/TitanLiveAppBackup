@@ -400,7 +400,12 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
                     if (takePhoto) {
                         takePhoto = false;
                         savePhoto(b);
-                        machineHandler.sendEmptyMessage(StateMachineHandler.TAKE_PHOTO);
+                        if(!isLocalRecording && !isStreamingRecording && !isSos) {
+                            machineHandler.sendEmptyMessage(StateMachineHandler.TAKE_PHOTO);
+                        }
+                    }
+                    else if(!isLocalRecording && !isStreamingRecording && !isSos){
+                        finishMainCamera();
                     }
                 }
             });
@@ -630,9 +635,7 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
 
     public void initPhotoCamera(){
         //inicia la camara principal para tomar la foto
-        if(!isLocalRecording) {
-            initMainCamera();
-        }
+        initMainCamera();
     }
 
     public void initCamera_(final boolean localConfig) {

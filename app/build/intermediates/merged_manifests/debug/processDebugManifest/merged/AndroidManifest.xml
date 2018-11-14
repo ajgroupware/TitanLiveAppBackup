@@ -125,6 +125,8 @@
                 <action android:name="android.intent.action.QUICKBOOT_POWEROFF" />
             </intent-filter>
         </receiver>
+
+        <service android:name="com.bpt.tipi.streaming.service.CheckPeriodicalService" />
     </application>
 
 </manifest>

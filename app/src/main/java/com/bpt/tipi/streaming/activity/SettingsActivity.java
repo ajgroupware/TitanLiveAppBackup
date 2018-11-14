@@ -423,11 +423,13 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
 
         @Override
         public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String s) {
+            /*
             RemoteConfig remoteConfig = ConfigHelper.getConfig(getActivity());
             Gson gson = new Gson();
             String json = gson.toJson(remoteConfig);
             HttpClient httpClient = new HttpClient(this);
             httpClient.httpRequest(json, HttpHelper.Method.SEND_CONFIG, HttpHelper.TypeRequest.TYPE_PUT, true);
+            */
         }
 
         @Override

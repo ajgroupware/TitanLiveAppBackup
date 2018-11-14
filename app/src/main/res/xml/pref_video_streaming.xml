@@ -2,8 +2,8 @@
 
     <ListPreference
         android:defaultValue="2"
-        android:entries="@array/pref_streaming_video_size_titles"
-        android:entryValues="@array/pref_video_size_values"
+        android:entries="@array/pref_streaming_video_size_titles_"
+        android:entryValues="@array/pref_video_size_values_"
         android:key="@string/streaming_key_video_size"
         android:negativeButtonText="@null"
         android:numeric="integer"
@@ -12,8 +12,8 @@
 
     <ListPreference
         android:defaultValue="@string/pref_default_streaming_framerate"
-        android:entries="@array/pref_video_framerate"
-        android:entryValues="@array/pref_video_framerate"
+        android:entries="@array/pref_video_framerate_"
+        android:entryValues="@array/pref_video_framerate_"
         android:key="@string/streaming_key_framerate"
         android:negativeButtonText="@null"
         android:numeric="integer"

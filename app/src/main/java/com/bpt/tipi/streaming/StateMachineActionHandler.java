@@ -14,7 +14,7 @@ public class StateMachineActionHandler {
                     recorderService.initPhotoCamera();
                     break;
                 case CAMERA_STOP:
-                    recorderService.finishMainCamera();
+                    recorderService.finishPrimaryCamera();
                     break;
                 case LR_START:
                     recorderService.initLocalVideoCounter();
@@ -52,6 +52,9 @@ public class StateMachineActionHandler {
                     break;
                 case TAKE_PHOTO:
                     recorderService.takePhoto();
+                    break;
+                case TAKE_PHOTO_DIRECT:
+                    recorderService.takePhotoDirect();
                     break;
             }
         }

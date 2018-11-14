@@ -17,5 +17,6 @@ public enum StateAction {
     LR_STOP_WITHOUT_SOUND,
     PR_START,
     PR_STOP,
-    TAKE_PHOTO
+    TAKE_PHOTO,
+    TAKE_PHOTO_DIRECT
 }

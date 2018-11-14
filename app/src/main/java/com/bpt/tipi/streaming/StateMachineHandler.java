@@ -126,13 +126,14 @@ public class StateMachineHandler extends Handler {
                         StateMachineActionHandler.manageState(recorderService, StateAction.CAMERA_STOP);
                         break;
                     case LR:
-                        StateMachineActionHandler.manageState(recorderService, StateAction.CAMERA_START, StateAction.TAKE_PHOTO);
+                        StateMachineActionHandler.manageState(recorderService, StateAction.TAKE_PHOTO_DIRECT);
                         break;
                     case ST:
+                        state = StateMachine.PH;
                         StateMachineActionHandler.manageState(recorderService, StateAction.CAMERA_START, StateAction.TAKE_PHOTO);
                         break;
                     case LR_ST:
-                        StateMachineActionHandler.manageState(recorderService, StateAction.CAMERA_START, StateAction.TAKE_PHOTO);
+                        StateMachineActionHandler.manageState(recorderService, StateAction.TAKE_PHOTO);
                         break;
                 }
                 break;

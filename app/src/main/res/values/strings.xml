@@ -210,6 +210,10 @@
         <item>1280 x 720 Alto</item>
     </string-array>
 
+    <string-array name="pref_streaming_video_size_titles_">
+        <item>320 x 240 Medio</item>
+    </string-array>
+
     <string-array name="pref_video_bitrates">
         <item>140</item>
         <item>280</item>
@@ -247,11 +251,19 @@
         <item>18</item>
     </string-array>
 
+    <string-array name="pref_video_size_values_">
+        <item>2</item>
+    </string-array>
+
     <string-array name="pref_video_framerate">
         <item>15</item>
         <item>20</item>
         <item>25</item>
         <item>30</item>
+    </string-array>
+
+    <string-array name="pref_video_framerate_">
+        <item>15</item>
     </string-array>
 
     <!-- Strings para la configuración del id del dispositivo -->

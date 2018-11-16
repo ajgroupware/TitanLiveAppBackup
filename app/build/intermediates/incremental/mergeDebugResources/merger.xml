@@ -1937,6 +1937,8 @@
         <item>1280 x 720 Bajo</item>
         <item>1280 x 720 Medio</item>
         <item>1280 x 720 Alto</item>
+    </string-array><string-array name="pref_streaming_video_size_titles_">
+        <item>320 x 240 Medio</item>
     </string-array><string-array name="pref_video_bitrates">
         <item>140</item>
         <item>280</item>
@@ -1968,11 +1970,15 @@
         <item>16</item>
         <item>17</item>
         <item>18</item>
+    </string-array><string-array name="pref_video_size_values_">
+        <item>2</item>
     </string-array><string-array name="pref_video_framerate">
         <item>15</item>
         <item>20</item>
         <item>25</item>
         <item>30</item>
+    </string-array><string-array name="pref_video_framerate_">
+        <item>15</item>
     </string-array><string name="key_device_id">device_id</string><string name="default_device_id"/><string name="title_device_id">ID del dispositivo</string><string name="key_password_for_settings">password_for_settings</string><string name="default_password_for_settings">123456</string><string name="title_password_for_settings">Clave para configuración.</string><string name="key_interval_location">interval_location</string><string name="default_interval_location">10</string><string name="title_interval_location">Intervalo de envío de la ubicación.</string><string name="key_interval_location_sos">interval_location_sos</string><string name="default_interval_location_sos">5</string><string name="title_interval_location_sos">Intervalo de envío de la ubicación en SOS.</string><string name="key_streaming_video_size">streaming_video_size</string><string name="default_streaming_video_size">1</string><string name="title_streaming_video_size">Tamaño del video.</string><string-array name="streaming_video_sizes">
         <item>320 x 240 Bajo</item>
         <item>320 x 240 Medio</item>

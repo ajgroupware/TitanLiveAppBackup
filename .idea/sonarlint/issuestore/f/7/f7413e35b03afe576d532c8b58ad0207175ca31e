@@ -1,0 +1,26 @@
+
+U"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(ıÃ›ò8›™ğñ,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¿£÷×øÿÿÿÿ8¾íğñ,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¾íğñ,
+Tsquid:S1172"3Remove this unused method parameter "recorderType".(Äüìôøÿÿÿÿ8¾íğñ,
+[squid:CallToDeprecatedMethod".Remove this use of "Header"; it is deprecated.(‘ËÙï8¾íğñ,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¿£÷×øÿÿÿÿ8›™ğñ,
+fsquid:CallToDeprecatedMethod"4Remove this use of "StringEntity"; it is deprecated.(ß´ôƒúÿÿÿÿ8¾íğñ,
+psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§»Œ°ûÿÿÿÿ8¾íğñ,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¿£÷×øÿÿÿÿ8›™ğñ,
+[squid:CallToDeprecatedMethod".Remove this use of "Header"; it is deprecated.(Ã´­ê8¾íğñ,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¾íğñ,
+lsquid:S1192"KDefine a constant instead of duplicating this literal "Depuracion" 8 times.(¹¡‹œùÿÿÿÿ8¾íğñ,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¿£÷×øÿÿÿÿ8›™ğñ,
+`squid:CallToDeprecatedMethod".Remove this use of "Header"; it is deprecated.(ğĞ—öúÿÿÿÿ8¾íğñ,
+[squid:CallToDeprecatedMethod".Remove this use of "Header"; it is deprecated.(‘ËÙï8¾íğñ,
+Zsquid:UselessImportCheck"1Remove this unused import 'org.opencv.core.Size'.(˜„â8›™ğñ,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¿£÷×øÿÿÿÿ8›™ğñ,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ü•”ºüÿÿÿÿ8¾íğñ,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¿£÷×øÿÿÿÿ8¾íğñ,
+fsquid:CallToDeprecatedMethod"4Remove this use of "StringEntity"; it is deprecated.(ß´ôƒúÿÿÿÿ8¾íğñ,
+`squid:CallToDeprecatedMethod".Remove this use of "Header"; it is deprecated.(ğĞ—öúÿÿÿÿ8¾íğñ,
+[squid:S1118":Add a private constructor to hide the implicit public one.(¯Í§ÿÿÿÿÿ8›™ğñ,
+squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ì°ûÑ8¾íğñ,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¿£÷×øÿÿÿÿ8¾íğñ,
+[squid:CallToDeprecatedMethod".Remove this use of "Header"; it is deprecated.(Ã´­ê8¾íğñ,

@@ -1,0 +1,11 @@
+
+esquid:HiddenFieldCheck"9Rename "files" which hides the field declared at line 34.(—¾èÒÿÿÿÿÿ8ª®Ìöğ,
+asquid:S2259"EA "NullPointerException" could be thrown; "adapter" is nullable here.(…ÁÑŞ8ª®Ìöğ,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ª®Ìöğ,
+¢squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ø´´øÿÿÿÿ8ª®Ìöğ,
+Fsquid:S00108")Either remove or fill this block of code.(”ı¾8ª®Ìöğ,
+¢squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(™Î«şÿÿÿÿ8ª®Ìöğ,
+osquid:MaximumInheritanceDepth"<This class has 7 parents which is greater than 5 authorized.(’Ïí€øÿÿÿÿ8ª®Ìöğ,
+_squid:S1155">Use isEmpty() to check whether the collection is empty or not.(ä·ƒáüÿÿÿÿ8ª®Ìöğ,
+gsquid:HiddenFieldCheck";Rename "adapter" which hides the field declared at line 38.(‡ ÷îÿÿÿÿÿ8ª®Ìöğ,
+`squid:UselessImportCheck"7Remove this unused import 'android.app.ProgressDialog'.(¶ÍÔÓ8ª®Ìöğ,

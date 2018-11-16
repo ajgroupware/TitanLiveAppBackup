@@ -36,13 +36,16 @@ public final class R {
     public static final int local_video_sizes=0x7f030003;
     public static final int pref_local_video_bitrates=0x7f030004;
     public static final int pref_streaming_video_size_titles=0x7f030005;
-    public static final int pref_titles_local_video_size=0x7f030006;
-    public static final int pref_values_local_video_size=0x7f030007;
-    public static final int pref_video_bitrates=0x7f030008;
-    public static final int pref_video_framerate=0x7f030009;
-    public static final int pref_video_size_values=0x7f03000a;
-    public static final int streaming_video_sizes=0x7f03000b;
-    public static final int video_framerates=0x7f03000c;
+    public static final int pref_streaming_video_size_titles_=0x7f030006;
+    public static final int pref_titles_local_video_size=0x7f030007;
+    public static final int pref_values_local_video_size=0x7f030008;
+    public static final int pref_video_bitrates=0x7f030009;
+    public static final int pref_video_framerate=0x7f03000a;
+    public static final int pref_video_framerate_=0x7f03000b;
+    public static final int pref_video_size_values=0x7f03000c;
+    public static final int pref_video_size_values_=0x7f03000d;
+    public static final int streaming_video_sizes=0x7f03000e;
+    public static final int video_framerates=0x7f03000f;
   }
   public static final class attr {
     /**

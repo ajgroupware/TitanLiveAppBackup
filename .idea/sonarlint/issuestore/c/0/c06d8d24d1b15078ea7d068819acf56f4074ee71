@@ -1,6 +1,9 @@
 
-"squid:SwitchLastCaseIsDefaultCheck"YComplete cases by adding the missing enum constants or add a default case to this switch.(ş™ÅŞ8¸¦•çì,
-"squid:SwitchLastCaseIsDefaultChecki"YComplete cases by adding the missing enum constants or add a default case to this switch.(ş™ÅŞ8¸¦•çì,
-\"squid:SwitchLastCaseIsDefaultCheck#""Add a default case to this switch.(ıŞ³‹ùÿÿÿÿ8¸¦•çì,
-usquid:S3776!"RRefactor this method to reduce its Cognitive Complexity from 39 to the 15 allowed.(ñ‰ÿÜıÿÿÿÿ8¸¦•çì,
-"squid:SwitchLastCaseIsDefaultCheck%"YComplete cases by adding the missing enum constants or add a default case to this switch.(ş™ÅŞ8¸¦•çì,
+esquid:S1871"IThis case's code block is the same as the block for the case on line 120.(¿¾·û8ÔÀ»¢ñ,
+Z"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(ıŞ³‹ùÿÿÿÿ8ÔÀ»¢ñ,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(øŒÎûùÿÿÿÿ8ÔÀ»¢ñ,
+fsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÿ£·78ÔÀ»¢ñ,
+ssquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(ñ‰ÿÜıÿÿÿÿ8ÔÀ»¢ñ,
+Œ"squid:SwitchLastCaseIsDefaultCheck"YComplete cases by adding the missing enum constants or add a default case to this switch.(ş™ÅŞ8ÔÀ»¢ñ,
+Œ"squid:SwitchLastCaseIsDefaultCheck"YComplete cases by adding the missing enum constants or add a default case to this switch.(ş™ÅŞ8ÔÀ»¢ñ,
+Œ"squid:SwitchLastCaseIsDefaultCheck"YComplete cases by adding the missing enum constants or add a default case to this switch.(ş™ÅŞ8ÔÀ»¢ñ,

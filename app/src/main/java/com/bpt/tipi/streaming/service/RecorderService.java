@@ -5,7 +5,12 @@ import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.ImageFormat;
+import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.SurfaceTexture;
 import android.graphics.YuvImage;
@@ -24,15 +29,19 @@ import android.os.Message;
 import android.os.Process;
 import android.util.Log;
 
+import com.bpt.tipi.streaming.BitmapUtils;
 import com.bpt.tipi.streaming.ConfigHelper;
+import com.bpt.tipi.streaming.R;
 import com.bpt.tipi.streaming.StateMachineHandler;
 import com.bpt.tipi.streaming.UnCaughtException;
+
 import com.bpt.tipi.streaming.Utils;
 import com.bpt.tipi.streaming.helper.CameraHelper;
 import com.bpt.tipi.streaming.helper.CameraRecorderHelper;
 import com.bpt.tipi.streaming.helper.IrHelper;
 import com.bpt.tipi.streaming.helper.VideoNameHelper;
 import com.bpt.tipi.streaming.model.MessageEvent;
+import com.bumptech.glide.load.resource.bitmap.BitmapTransitionOptions;
 
 import org.bytedeco.javacpp.avutil;
 import org.bytedeco.javacv.FFmpegFrameFilter;
@@ -48,16 +57,24 @@ import org.opencv.android.LoaderCallbackInterface;
 import org.opencv.android.OpenCVLoader;
 import org.opencv.core.CvType;
 import org.opencv.core.Mat;
+import org.opencv.core.Scalar;
+import org.opencv.imgcodecs.Imgcodecs;
+import org.opencv.imgproc.Imgproc;
 
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.nio.ByteBuffer;
 import java.nio.ShortBuffer;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.zip.DataFormatException;
+import java.util.zip.Deflater;
+import java.util.zip.Inflater;
 
 import static org.bytedeco.javacpp.avutil.AV_PIX_FMT_NV21;
 
@@ -994,26 +1011,55 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
     }
 
     public void takePhotoDirect() {
-        try {
+        try{
             primaryCamera.takePicture(new Camera.ShutterCallback() {
+                @Override
                 public void onShutter() {
+
                 }
             }, new Camera.PictureCallback() {
-                public void onPictureTaken(byte[] data, Camera camera) {
+                @Override
+                public void onPictureTaken(byte[] bytes, Camera camera) {
                     Log.i(TAG, "onPictureTaken - raw");
-                    //savePhotoDirect(data);
+                    //savePhoto(bytes);
                 }
             }, new Camera.PictureCallback() {
-                public void onPictureTaken(byte[] data, Camera camera) {
+                @Override
+                public void onPictureTaken(byte[] bytes, Camera camera) {
                     Log.i(TAG, "onPictureTaken - jpeg");
+                    /*Bitmap bmp = BitmapFactory.decodeByteArray(bytes , 0, bytes.length);
+                    Mat orig = new Mat(bmp.getHeight(),bmp.getWidth(),CvType.CV_8UC2);
+                    Bitmap myBitmap32 = bmp.copy(Bitmap.Config.ARGB_8888, true);
+                    org.opencv.android.Utils.bitmapToMat(myBitmap32, orig);
+                    //Mat mImage = new Mat();
+                    //Imgproc.cvtColor(orig,mImage,Imgproc.COLOR_RGB2YUV);
+                    //Imgproc.cvtColor(orig, mImage, Imgproc.COLOR_BGR2RGB,1);
+
+                    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+                    String currentDate = sdf.format(new Date());
+                    CameraRecorderHelper.putWaterMark(orig, currentDate, "TITAN-" + deviceId);
+
+                    int bufferSize = (int) (orig.step1(0)*orig.rows());
+                    byte[] b = new byte[bufferSize];
+                    orig.get(0,0,b);
+
+                    savePhoto(b);*/
+                    Bitmap bmp = BitmapUtils.convertCompressedByteArrayToBitmap(bytes);
+
+                    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+                    String currentDate = sdf.format(new Date());
+
+                    Bitmap bmpWm = applyWaterMarkEffect(bmp, currentDate,"TITAN-" + deviceId);
+                    byte[] data = BitmapUtils.convertBitmapToByteArray(bmpWm);
                     savePhotoDirect(data);
                 }
             });
-        } catch (Exception e) {
+        }catch (Exception e){
             e.printStackTrace();
         }
-
     }
+
+
 
     public void savePhoto(byte[] data) {
         FileOutputStream file = null;
@@ -1044,7 +1090,6 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
         try {
             file = new FileOutputStream(VideoNameHelper.getNamePhoto(context));
             file.write(data);
-            file.close();
             CameraRecorderHelper.soundTakePhoto(context);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -1057,6 +1102,55 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
                 e.printStackTrace();
             }
         }
+        /*FileOutputStream file = null;
+        try {
+            file = new FileOutputStream(VideoNameHelper.getNamePhoto(context));
+            file.write(data);
+            file.close();
+            CameraRecorderHelper.soundTakePhoto(context);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                file.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }*/
+    }
+
+    public static byte[] bitmapToByteArray(Bitmap bm) {
+        // Create the buffer with the correct size
+        int iBytes = bm.getWidth() * bm.getHeight()*4;
+        ByteBuffer buffer = ByteBuffer.allocate(iBytes);
+
+        // Log.e("DBG", buffer.remaining()+""); -- Returns a correct number based on dimensions
+        // Copy to buffer and then into byte array
+        bm.copyPixelsToBuffer(buffer);
+        // Log.e("DBG", buffer.remaining()+""); -- Returns 0
+        return buffer.array();
+    }
+
+    public Bitmap applyWaterMarkEffect(Bitmap src, String fecha , String watermark) {
+        int w = src.getWidth();
+        int h = src.getHeight();
+
+        Bitmap.Config conf = src.getConfig();
+        Bitmap result = Bitmap.createBitmap(w, h, conf);
+
+        Canvas canvas = new Canvas(result);
+
+        Paint paint = new Paint();
+        paint.setColor(getResources().getColor(R.color.white));
+        paint.setStyle(Paint.Style.FILL_AND_STROKE);
+        canvas.drawBitmap(src, 0, 0, paint);
+        paint.setTextSize(20);
+        canvas.drawText(fecha, 20, 50, paint);
+        canvas.drawText(watermark, 550, 800, paint);
+
+        return result;
     }
 
     public void savePhoto_(byte[] data) {

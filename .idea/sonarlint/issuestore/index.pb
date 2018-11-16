@@ -21,3 +21,9 @@ w
 Gapp/src/main/java/com/bpt/tipi/streaming/StateMachineActionHandler.java,2\6\264c9ef24d955e0313845f0197d87d26e2318631
 u
 Eapp/src/main/java/com/bpt/tipi/streaming/service/RecorderService.java,1\b\1b3dd672b39216d855c5c4ec2d824491d18df517
+y
+Iapp/src/main/java/com/bpt/tipi/streaming/helper/CameraRecorderHelper.java,f\7\f7413e35b03afe576d532c8b58ad0207175ca31e
+
+Oapp/src/main/java/com/bpt/tipi/streaming/receiver/events/SimChangeReceiver.java,5\2\52eda2ff07d93bd72626649416cb5fea473a467f
+o
+?app/src/main/java/com/bpt/tipi/streaming/UnCaughtException.java,d\7\d76b822b157909524876e65d3a7fb2844af5ec06

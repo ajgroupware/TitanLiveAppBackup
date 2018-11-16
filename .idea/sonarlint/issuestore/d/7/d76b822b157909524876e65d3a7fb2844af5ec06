@@ -1,0 +1,5 @@
+
+dsquid:S2166"CRename this class to remove "Exception" or correct its inheritance.(§ó¢ıÿÿÿÿ8§¬¤Àñ,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(±­ÖÀ8§¬¤Àñ,
+Zsquid:UselessImportCheck"1Remove this unused import 'android.app.Activity'.(‡ÊÍÆ8§¬¤Àñ,
+?squid:S1148"#Use a logger to log this exception.(Ç’Çê8§¬¤Àñ,

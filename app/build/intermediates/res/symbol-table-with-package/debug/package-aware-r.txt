@@ -22,11 +22,14 @@ array labels_tagging
 array local_video_sizes
 array pref_local_video_bitrates
 array pref_streaming_video_size_titles
+array pref_streaming_video_size_titles_
 array pref_titles_local_video_size
 array pref_values_local_video_size
 array pref_video_bitrates
 array pref_video_framerate
+array pref_video_framerate_
 array pref_video_size_values
+array pref_video_size_values_
 array streaming_video_sizes
 array video_framerates
 attr actionBarDivider

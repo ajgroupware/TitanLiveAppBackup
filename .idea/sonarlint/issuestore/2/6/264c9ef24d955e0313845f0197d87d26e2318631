@@ -1,4 +1,3 @@
 
-nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Þå˜”ýÿÿÿÿ8™ˆÁêì,
-]squid:S1118	":Add a private constructor to hide the implicit public one.(¦¥Ÿÿùÿÿÿÿ8Ïô¾êì,
-“"squid:SwitchLastCaseIsDefaultCheck"YComplete cases by adding the missing enum constants or add a default case to this switch.(ë´åÝþÿÿÿÿ8Ïô¾êì,
+[squid:S1118":Add a private constructor to hide the implicit public one.(¦¥Ÿÿùÿÿÿÿ8‹Ç»¢ñ,
+‘"squid:SwitchLastCaseIsDefaultCheck"YComplete cases by adding the missing enum constants or add a default case to this switch.(ë´åÝþÿÿÿÿ8‹Ç»¢ñ,

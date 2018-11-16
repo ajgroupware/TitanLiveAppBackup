@@ -27,3 +27,13 @@ Iapp/src/main/java/com/bpt/tipi/streaming/helper/CameraRecorderHelper.java,f\7\
 Oapp/src/main/java/com/bpt/tipi/streaming/receiver/events/SimChangeReceiver.java,5\2\52eda2ff07d93bd72626649416cb5fea473a467f
 o
 ?app/src/main/java/com/bpt/tipi/streaming/UnCaughtException.java,d\7\d76b822b157909524876e65d3a7fb2844af5ec06
+d
+4libraries/opencv/src/org/opencv/imgproc/Imgproc.java,c\5\c58b04cd112501c5b43b329a22b7db5e18109ee1
+c
+3app/src/main/java/com/bpt/tipi/streaming/Utils.java,c\b\cbc61186d5b290ed9e73285eff2d5f28e00ad49c
+i
+9app/src/main/java/com/bpt/tipi/streaming/BitmapUtils.java,1\c\1c726e3d152f0ce125409a253ea42b2982ad2dac
+R
+"app/src/main/res/values/colors.xml,9\6\969faa2a5d9f5e8390e958d2c07f2cfd54676e6b
+ž
+napp/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/com/bpt/tipi/streaming/R.java,6\a\6a93552132a888a3ffeb710f8bad456768986d88

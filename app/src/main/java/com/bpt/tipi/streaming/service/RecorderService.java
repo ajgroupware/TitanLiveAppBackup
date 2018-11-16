@@ -1027,29 +1027,14 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
                 @Override
                 public void onPictureTaken(byte[] bytes, Camera camera) {
                     Log.i(TAG, "onPictureTaken - jpeg");
-                    /*Bitmap bmp = BitmapFactory.decodeByteArray(bytes , 0, bytes.length);
-                    Mat orig = new Mat(bmp.getHeight(),bmp.getWidth(),CvType.CV_8UC2);
-                    Bitmap myBitmap32 = bmp.copy(Bitmap.Config.ARGB_8888, true);
-                    org.opencv.android.Utils.bitmapToMat(myBitmap32, orig);
-                    //Mat mImage = new Mat();
-                    //Imgproc.cvtColor(orig,mImage,Imgproc.COLOR_RGB2YUV);
-                    //Imgproc.cvtColor(orig, mImage, Imgproc.COLOR_BGR2RGB,1);
-
-                    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-                    String currentDate = sdf.format(new Date());
-                    CameraRecorderHelper.putWaterMark(orig, currentDate, "TITAN-" + deviceId);
-
-                    int bufferSize = (int) (orig.step1(0)*orig.rows());
-                    byte[] b = new byte[bufferSize];
-                    orig.get(0,0,b);
-
-                    savePhoto(b);*/
+                    //se decodifica el arreglo de bytes para poner marca de agua y se vuelve a comprimir para guardarlo
                     Bitmap bmp = BitmapUtils.convertCompressedByteArrayToBitmap(bytes);
 
                     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                     String currentDate = sdf.format(new Date());
 
-                    Bitmap bmpWm = applyWaterMarkEffect(bmp, currentDate,"TITAN-" + deviceId);
+                    Bitmap bmpWm = CameraRecorderHelper.applyWaterMarkEffect(bmp, currentDate,"TITAN-" + deviceId, context);
+
                     byte[] data = BitmapUtils.convertBitmapToByteArray(bmpWm);
                     savePhotoDirect(data);
                 }
@@ -1102,23 +1087,6 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
                 e.printStackTrace();
             }
         }
-        /*FileOutputStream file = null;
-        try {
-            file = new FileOutputStream(VideoNameHelper.getNamePhoto(context));
-            file.write(data);
-            file.close();
-            CameraRecorderHelper.soundTakePhoto(context);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                file.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }*/
     }
 
     public static byte[] bitmapToByteArray(Bitmap bm) {
@@ -1131,26 +1099,6 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
         bm.copyPixelsToBuffer(buffer);
         // Log.e("DBG", buffer.remaining()+""); -- Returns 0
         return buffer.array();
-    }
-
-    public Bitmap applyWaterMarkEffect(Bitmap src, String fecha , String watermark) {
-        int w = src.getWidth();
-        int h = src.getHeight();
-
-        Bitmap.Config conf = src.getConfig();
-        Bitmap result = Bitmap.createBitmap(w, h, conf);
-
-        Canvas canvas = new Canvas(result);
-
-        Paint paint = new Paint();
-        paint.setColor(getResources().getColor(R.color.white));
-        paint.setStyle(Paint.Style.FILL_AND_STROKE);
-        canvas.drawBitmap(src, 0, 0, paint);
-        paint.setTextSize(20);
-        canvas.drawText(fecha, 20, 50, paint);
-        canvas.drawText(watermark, 550, 800, paint);
-
-        return result;
     }
 
     public void savePhoto_(byte[] data) {

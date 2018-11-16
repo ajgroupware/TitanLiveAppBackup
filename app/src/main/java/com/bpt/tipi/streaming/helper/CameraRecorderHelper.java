@@ -2,6 +2,9 @@ package com.bpt.tipi.streaming.helper;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Paint;
 import android.media.MediaPlayer;
 import android.os.CountDownTimer;
 import android.os.Vibrator;
@@ -106,6 +109,26 @@ public class CameraRecorderHelper {
                 Imgproc.putText(mat, text2, new Point(2, 500), Core.FONT_HERSHEY_COMPLEX_SMALL, 1.5, TEXT_COLOR);
                 break;
         }
+    }
+
+    public static Bitmap applyWaterMarkEffect(Bitmap src, String fecha , String watermark, Context context) {
+        int w = src.getWidth();
+        int h = src.getHeight();
+
+        Bitmap.Config conf = src.getConfig();
+        Bitmap result = Bitmap.createBitmap(w, h, conf);
+
+        Canvas canvas = new Canvas(result);
+
+        Paint paint = new Paint();
+        paint.setColor(context.getResources().getColor(R.color.white));
+        paint.setStyle(Paint.Style.FILL_AND_STROKE);
+        canvas.drawBitmap(src, 0, 0, paint);
+        paint.setTextSize(30);
+        //canvas.drawText(fecha, 20, 50, paint);
+        canvas.drawText(watermark + fecha, 800, 710, paint);
+
+        return result;
     }
 
     public static int getStreamingImageWidth(Context context) {

@@ -4,13 +4,12 @@ android {
     useLibrary 'org.apache.http.legacy'
     compileSdkVersion 27
     buildToolsVersion '28.0.3'
-
     defaultConfig {
         applicationId "com.bpt.tipi.streaming"
         minSdkVersion 21
         targetSdkVersion 25
         versionCode 1
-        versionName "1.0"
+        versionName '1.0.00'
     }
     sourceSets {
 
@@ -31,6 +30,8 @@ android {
     }
     configurations {
         all*.exclude group: 'org.bytedeco', module: 'javacpp-presets'
+    }
+    productFlavors {
     }
 }
 

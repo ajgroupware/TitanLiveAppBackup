@@ -10678,9 +10678,8 @@ public final class R {
      */
     public static final int CustomEditText_android_maxLength=0;
     /**
-     * <p>
-     * @attr description
-     * Tipo de entrada para el campo de texto
+     * <p>This symbol is the offset where the {@link android.R.attr#inputType}
+     * attribute's value can be found in the {@link #CustomEditText} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -10726,9 +10725,8 @@ public final class R {
      */
     public static final int CustomEditText_android_inputType=1;
     /**
-     * <p>
-     * @attr description
-     * Titulo
+     * <p>This symbol is the offset where the {@link com.bpt.tipi.streaming.R.attr#title}
+     * attribute's value can be found in the {@link #CustomEditText} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;

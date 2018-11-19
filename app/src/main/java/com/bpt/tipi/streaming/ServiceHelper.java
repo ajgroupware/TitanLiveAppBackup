@@ -33,12 +33,12 @@ public class ServiceHelper {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
         String idDevice = preferences.getString(context.getString(R.string.id_device), "");
 
-        if (!idDevice.isEmpty()) {
-            if (!Utils.isServiceRunning(context, LocationService.class)) {
-                context.startService(new Intent(context, LocationService.class));
-                Toast.makeText(context, ".:startLocationService:.", Toast.LENGTH_SHORT).show();
-            }
+        //if (!idDevice.isEmpty()) {
+        if (!Utils.isServiceRunning(context, LocationService.class)) {
+            context.startService(new Intent(context, LocationService.class));
+            Toast.makeText(context, ".:startLocationService:.", Toast.LENGTH_SHORT).show();
         }
+        //}
     }
 
     public static synchronized void stopLocationService(Context context) {

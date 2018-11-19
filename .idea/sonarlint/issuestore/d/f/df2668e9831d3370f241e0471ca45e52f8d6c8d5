@@ -1,27 +1,0 @@
-
-N"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(ÑË“
-csquid:S1192"IUse already-defined constant 'TAG' instead of duplicating its value here.(íØ¦äÿÿÿÿÿ
-hsquid:S2095"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(ƒÁöĞüÿÿÿÿ
-`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÿÂÛ
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(è£ª„ÿÿÿÿÿ
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(“«ôûûÿÿÿÿ
-†"squid:ClassVariableVisibilityCheck"UMake recording a static final constant or non-public and provide accessors if needed.(“ÿ¼¯ùÿÿÿÿ
-Qsquid:S2589"7Remove this expression which always evaluates to "true"(™Ÿıÿÿÿÿ
-lsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(ûİæèşÿÿÿÿ
-gsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(“–ış
-?squid:S00108")Either remove or fill this block of code.(‹±ÃÆ
-–squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(îñë‡
-Tsquid:UselessImportCheck"-Remove this unused import 'java.util.Random'.(èøÉ›ùÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ

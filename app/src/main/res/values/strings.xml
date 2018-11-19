@@ -87,7 +87,9 @@
     <!--string name="pref_default_host_address">10.80.63.236</string-->
     <!--<string name="pref_default_host_address">10.126.0.229</string>-->
 
-    <!--<string name="pref_default_host_address">52.24.232.162</string>-->
+<!--
+    <string name="pref_default_host_address">52.24.232.162</string>
+-->
     <string name="pref_summary_host_address">El nombre del host o la dirección IP del servidor de streaming.</string>
 
     <!-- Puerto del servidor-->

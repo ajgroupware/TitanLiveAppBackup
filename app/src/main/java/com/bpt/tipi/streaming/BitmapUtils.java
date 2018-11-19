@@ -55,4 +55,16 @@ public final class BitmapUtils {
     public static Bitmap convertCompressedByteArrayToBitmap(byte[] src){
         return BitmapFactory.decodeByteArray(src, 0, src.length);
     }
+
+    /**
+     * Converts non-compressed byte array to bitmap
+     * @param byteArray
+     * @return
+     */
+    public static Bitmap byteArrayToBitmap(byte[] byteArray)
+    {
+        ByteArrayInputStream arrayInputStream = new ByteArrayInputStream(byteArray);
+        Bitmap bitmap = BitmapFactory.decodeStream(arrayInputStream);
+        return bitmap;
+    }
 }

@@ -39,6 +39,7 @@ import com.bpt.tipi.streaming.Utils;
 import com.bpt.tipi.streaming.helper.CameraHelper;
 import com.bpt.tipi.streaming.helper.CameraRecorderHelper;
 import com.bpt.tipi.streaming.helper.IrHelper;
+import com.bpt.tipi.streaming.helper.PreferencesHelper;
 import com.bpt.tipi.streaming.helper.VideoNameHelper;
 import com.bpt.tipi.streaming.model.MessageEvent;
 import com.bumptech.glide.load.resource.bitmap.BitmapTransitionOptions;
@@ -406,6 +407,18 @@ public class RecorderService extends Service implements Camera.PreviewCallback {
                     byte[] b = new byte[bufferSize];
 
                     mat.get(0, 0, b);
+
+                    /*SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+                    String currentDate = sdf.format(new Date());
+
+                    Bitmap bmp = Bitmap.createBitmap(parameters.getPreviewSize().width, parameters.getPreviewSize().height, Bitmap.Config.ARGB_8888); //changing of content of the bmp omitted
+                    ByteBuffer byteBuffer = ByteBuffer.wrap(bytes);
+                    byteBuffer.rewind();
+                    bmp.copyPixelsToBuffer(byteBuffer);
+
+                    Bitmap bmpWm = CameraRecorderHelper.applyWaterMarkEffect(bmp, currentDate,"TITAN-" + deviceId, context);
+                    byte[] data = BitmapUtils.convertBitmapToByteArray(bmpWm);*/
+
 
                     if (isStreamingRecording) {
                     streamingRecord(b);

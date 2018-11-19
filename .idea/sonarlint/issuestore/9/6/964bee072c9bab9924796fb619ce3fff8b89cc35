@@ -1,24 +1,0 @@
-
-Z"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(×“¾ñùÿÿÿÿ8Š¡Ûşğ,
-U"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(ÑË“8Š¡Ûşğ,
-U"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(ãØ´ú8Š¡Ûşğ,
-Gsquid:S1659"+Declare "tvTimeElapsed" on a separate line.(¡†­Ö8Š¡Ûşğ,
-isquid:S1192"HDefine a constant instead of duplicating this literal "isLogin" 3 times.(‘Æè©ÿÿÿÿÿ8Š¡Ûşğ,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ê˜š›ÿÿÿÿÿ8Š¡Ûşğ,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(µ¶¸õşÿÿÿÿ8Š¡Ûşğ,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ñşœÇıÿÿÿÿ8Š¡Ûşğ,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¡Õ±š8Š¡Ûşğ,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(°÷œŒşÿÿÿÿ8Š¡Ûşğ,
-ssquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(üüÊºøÿÿÿÿ8Š¡Ûşğ,
-¢squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(œƒƒ©ùÿÿÿÿ8Š¡Ûşğ,
-¢squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(½íµ”úÿÿÿÿ8Š¡Ûşğ,
-[squid:UselessImportCheck"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8Š¡Ûşğ,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Š¡Ûşğ,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Š¡Ûşğ,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Š¡Ûşğ,
-_squid:S1155">Use isEmpty() to check whether the collection is empty or not.(ñÎí†ıÿÿÿÿ8Š¡Ûşğ,
-_squid:S1155">Use isEmpty() to check whether the collection is empty or not.(ñÎí†ıÿÿÿÿ8Š¡Ûşğ,
-_squid:S1155">Use isEmpty() to check whether the collection is empty or not.(ä·ƒáüÿÿÿÿ8Š¡Ûşğ,
-_squid:S1155">Use isEmpty() to check whether the collection is empty or not.(¸õÉÙûÿÿÿÿ8Š¡Ûşğ,
-_squid:S1155">Use isEmpty() to check whether the collection is empty or not.(¸õÉÙûÿÿÿÿ8Š¡Ûşğ,
-jsquid:MaximumInheritanceDepth"<This class has 7 parents which is greater than 5 authorized.(×›¡à8Š¡Ûşğ,

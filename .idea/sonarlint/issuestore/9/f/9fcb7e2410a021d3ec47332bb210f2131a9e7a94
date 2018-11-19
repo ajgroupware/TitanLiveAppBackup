@@ -1,7 +1,0 @@
-
-Ssquid:S1444"2Make this "public static firstConnect" field final(›ωΡ»ωÿÿÿÿ8Αθαμ,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(αΰ8Αθαμ,
-Wsquid:S2696"6Make the enclosing method "static" or remove this set.(ύ¥εόÿÿÿÿ8Αθαμ,
-Wsquid:S2696"6Make the enclosing method "static" or remove this set.(·£ό¦ώÿÿÿÿ8Αθαμ,
-"squid:ClassVariableVisibilityCheck"XMake firstConnect a static final constant or non-public and provide accessors if needed.(›ωΡ»ωÿÿÿÿ8Αθαμ,
-squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ξρλ‡8Αθαμ,

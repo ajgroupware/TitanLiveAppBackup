@@ -126,7 +126,12 @@ public class CameraRecorderHelper {
         canvas.drawBitmap(src, 0, 0, paint);
         paint.setTextSize(30);
         //canvas.drawText(fecha, 20, 50, paint);
+        //canvas.save();
+        //canvas.rotate(-90, 800, 710);
         canvas.drawText(watermark + fecha, 800, 710, paint);
+        //canvas.restore();
+
+
 
         return result;
     }
